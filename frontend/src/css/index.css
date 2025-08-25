@@ -1,16 +1,11 @@
 :root {
-  --colormain: #f01184;
-  --colorsec: #000000;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
   
+  font-family: "Krona One", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
-
   line-height: 1.5;
   font-size: xx-large;
   color-scheme: normal;
-  color: var(--colorsec);
-  background-color: var(--colormain);
   text-align: center;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,66 +13,48 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.dark-mode {
+  --colormain: #000000;
+  --colorsec: #ff0037;
+  --colorsec2: #b31164;
+  --colormain2: #35051e;
+  --colorter: #999698;
+}
+
 body {
+  --colormain: #ff0037;
+  --colormain2: #b31164;
+  --colorsec: #000000;
+  --colorsec2: #35051e;
+  --colorter: #999698;
+
+  color: var(--colorsec);
+  background-color: var(--colormain);
   min-width: 322px;
   min-height: 100vh;
   margin-top: 100px;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
-/* Ancho y alto de la scrollbar */
-::-webkit-scrollbar {
-  width: 25px; /* barra vertical */
-  height: 20px; /* barra horizontal */
-}
-
-/* Fondo del track (el área de la scrollbar) */
-::-webkit-scrollbar-track {
-  background: #000;
-  border-radius: 0px;
-}
-
-/* El “pulgar” (la parte que se mueve) */
-::-webkit-scrollbar-thumb {
-  background-color: #f21654;
-  border-radius: 11px;
-  border: 9px;
-}
-
-/* Hover sobre el pulgar */
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--colormain);
-}
 
 .navbar {
-  background-color: #000;
+  background: var(--colorsec);
   overflow: hidden;
   position: fixed; /* fija arriba */
   top: 0;
   left: 0;
   z-index: 1000;
-  gap: 5rem;
+  gap: 2rem;
   width: 100%;
-  height: 3.6rem;
+  height: 2.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
   z-index: 1000;
-  font-size: 1rem;
+  
 }
 
 .navbar a {
@@ -85,8 +62,10 @@ body {
   justify-content: center; /* centra horizontal */
   align-items: center;
   color: var(--colormain);
-  padding: 12px 16px;
+  padding: 10px 13px;
   text-decoration: none;
+  font-size: 0.6rem;
+  transform: scaleY(1.3);
   font-weight: bold;
   text-align: center;
   transition: transform 0.2s ease;
@@ -94,67 +73,168 @@ body {
 
 .navbar .frame {
   border: solid var(--colormain) 3px;
-  height: 2.3rem;
+  height: 1.3rem;
+  padding: 0rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar .frame:hover {
   border: solid var(--colorsec) 3px;
-  height: 2.3rem;
+  height: 1.3rem;
 }
 
 .navbar .frame:active {
   border: solid red 3px;
-  height: 2.3rem;
+  height: 1.3rem;
 }
 
 .navbar a:hover {
   transform: scale(1.2, 2.3);
 }
 
-.navbar a:active {
-  transform: scale(0.1, 1);
+
+
+
+
+
+
+/*forma main */
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
+
+.toggle-slot {
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  height: 3.5em;
+  width: 7em;
+  border: 0px solid transparent;
+  border-radius: 10em;
+  background-color: #ff0037;
+  transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color:  #000000;
+}
+
+.toggle-button {
+  transform: translate(0.3em, 0.25em);
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #ff0037;
+  box-shadow: inset 0px 0px 0px 0.75em #000000;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #000000;
+  box-shadow: inset 0px 0px 0px 0.75em #ff0037;
+  transform: translate(3.65em, 0.25em);
+}
+
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: var(--colormain);
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: white;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(-15deg);
+}
+
+
+
+
 
 .mainPanel {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 1.5rem;
+  padding: 2rem 0 0 1rem;
   gap: none;
   height: auto;
-  margin-top: 4.5rem;
+  margin-top: 2.9rem;
+  background: var(--colormain);
+  /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
 }
 
 .mainPanel h1 {
   color: var(--colorsec);
-  font-size: 5rem;
+  font-size: 2.8rem;
   letter-spacing: -0.2rem;
   font-weight: 600;
-  margin: 0;
-  transform: scaleY(1.6); 
-  /*
+  margin: 0 0 1.2rem 0;
+  transform: scaleY(2.3); 
+  /*-webkit-text-stroke: 1px var(--colorsec);
   text-shadow:
-     2px 2px 0 var(--colorsec),
-    -2px 2px 0 var(--colorsec),
-     2px -2px 0 var(--colorsec),
-    -2px -2px 0 var(--colorsec);*/
+     5px 5px 0 red,
+    -5px 5px 0 red,
+     5px -5px 0 red,
+    -5px -5px 0 red;*/
 }
 
 .mainPanel h2 {
-  font-size: 2rem;
+  font-size: 1.1rem;
+  color: var(--colorsec);
   text-align: start;
-  margin: -1.5rem 0 0 0.5rem;
-  letter-spacing: 0.15rem;
+  margin: 0 0 0rem 0.3rem;
   font-weight: 900;
-  transform: scaleY(1.6);
+  transform: scaleY(2);
 }
 
-.mainPanel h3 {
-  font-size: 1rem;
+.mainPanel p {
+  margin: 0 0 1.2rem 0.3rem;
+  font-size: 0.6rem;
+  width: 75%;
+  color: var(--colorsec); 
+  line-height: 1;
   text-align: start;
-  margin: 0 0 0 0;
   font-weight: 600;
-  transform: scaleY(1.6);
+  transform: scaleY(2);
 }
 
 
