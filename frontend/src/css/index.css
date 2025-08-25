@@ -27,7 +27,7 @@ body {
   --colorsec: #000000;
   --colorsec2: #35051e;
   --colorter: #999698;
-
+  
   color: var(--colorsec);
   background-color: var(--colormain);
   min-width: 322px;
@@ -86,7 +86,7 @@ body {
 }
 
 .navbar .frame:active {
-  border: solid red 3px;
+  
   height: 1.3rem;
 }
 
@@ -198,7 +198,7 @@ body {
   gap: none;
   height: auto;
   margin-top: 2.9rem;
-  background: var(--colormain);
+  
   /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
 }
 

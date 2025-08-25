@@ -1,0 +1,47 @@
+body.dark-mode {
+  --colormain: #000000;
+  --colorsec: #ff0037;
+  --colorsec2: #b31164;
+  --colormain2: #35051e;
+  --colorter: #999698;
+}
+
+body {
+  --colormain: #ff0037;
+  --colormain2: #b31164;
+  --colorsec: #000000;
+  --colorsec2: #35051e;
+  --colorter: #999698;
+}
+
+.panelTecnos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: repeat(2); /* 2 filas de 200px (puedes ajustar) */
+  column-gap: 2.5rem;
+  row-gap: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.tecno {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  height: 7rem;
+  width: 7rem;
+  padding: 1rem;
+  border: 7px solid var(--colorsec);
+}
+
+.tecno > h1 {
+  font-size: auto;
+  margin: 0;
+  height: auto;
+}
+
+.tecno > img {
+  height: 4.6rem;
+}
