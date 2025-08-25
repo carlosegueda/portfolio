@@ -3,7 +3,7 @@ body.dark-mode {
   --colorsec: #ff0037;
   --colorsec2: #b31164;
   --colormain2: #35051e;
-  --colorter: #999698;
+  --colorter: #eeeeee;
 }
 
 body {
@@ -11,37 +11,91 @@ body {
   --colormain2: #b31164;
   --colorsec: #000000;
   --colorsec2: #35051e;
-  --colorter: #999698;
+  --colorter: #d6d6d6;
+}
+
+.titulo {
+    display: flex;
+    padding: 0 1.4rem 0 1.1rem;
+}
+
+.titulo > h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  transform: scaleY(1.4);
+  letter-spacing: -0.1rem;
 }
 
 .panelTecnos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
   grid-template-rows: repeat(2); /* 2 filas de 200px (puedes ajustar) */
-  column-gap: 2.5rem;
-  row-gap: 1rem;
-  padding: 1rem 2rem 1rem 2rem;
+  column-gap: 1rem;
+  row-gap: 0.7rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
 }
 
-.tecno {
+.panelTecnos > div {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0rem;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   padding: 1rem;
   border: 7px solid var(--colorsec);
 }
 
-.tecno > h1 {
-  font-size: auto;
+.tecno1 > h1 {
+  font-size: 1.2rem;
+  letter-spacing: -0.1rem;
   margin: 0;
-  height: auto;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
 }
 
-.tecno > img {
-  height: 4.6rem;
+.tecno2 > h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
+}
+
+.tecno3 > h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
+}
+
+.tecno4 > h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
+}
+
+.tecno5 > h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
+}
+
+.tecno6 > h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.4);
+  margin-top: 0.5rem;
+}
+
+.panelTecnos > div > img {
+  height: 3.5rem;
 }

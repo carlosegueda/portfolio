@@ -18,7 +18,7 @@ body.dark-mode {
   --colorsec: #ff0037;
   --colorsec2: #b31164;
   --colormain2: #35051e;
-  --colorter: #999698;
+  --colorter: #d6d6d6;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   --colormain2: #b31164;
   --colorsec: #000000;
   --colorsec2: #35051e;
-  --colorter: #999698;
+  --colorter: #d6d6d6 ;
   
   color: var(--colorsec);
   background-color: var(--colormain);
@@ -116,7 +116,7 @@ body {
   height: 3.5em;
   width: 7em;
   border: 0px solid transparent;
-  border-radius: 10em;
+  border-radius: 5%;
   background-color: #ff0037;
   transition: background-color 250ms;
 }
@@ -130,7 +130,7 @@ body {
   position: absolute;
   height: 3em;
   width: 3em;
-  border-radius: 50%;
+  border-radius: 5%;
   background-color: #ff0037;
   box-shadow: inset 0px 0px 0px 0.75em #000000;
   transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
@@ -219,7 +219,7 @@ body {
 
 .mainPanel h2 {
   font-size: 1.1rem;
-  color: var(--colorsec);
+  color: var(--colorter);
   text-align: start;
   margin: 0 0 0rem 0.3rem;
   font-weight: 900;
