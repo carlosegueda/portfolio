@@ -12,7 +12,7 @@ export default function PaginaContacto() {
 
       <div className="panelContact">
         <div className="sendMsj">
-          <form id="form-mensaje" netlify>
+          <form id="form-mensaje" netlify action="/" >
             <input type="hidden" name="to" value="carlosegueda2002@gmail.com"></input>
             <div className="inputGrupo">
               <label for="nombre">Nombre</label>
