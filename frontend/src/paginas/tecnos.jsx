@@ -13,7 +13,7 @@ export default function PaginaTecnologias() {
         <h1>TECNOLOGÍAS</h1>
       </div>
       <div className="panelTecnos">
-        <div className="tecno1" onClick={() => setIsOpen(true)}>
+        <div className="tecno1" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
           {" "}
           <img src="htmlR.png" />
           <h1>HTML</h1>
@@ -21,7 +21,7 @@ export default function PaginaTecnologias() {
 
         
 
-        <div className="tecno2">
+        <div className="tecno2" >
           {" "}
           <img src="jsR.png" />
           <h1>JS</h1>
@@ -59,17 +59,12 @@ export default function PaginaTecnologias() {
         {isOpen && (
         <div className="overlay">
           <div className="modal">
-            
-            <button className="cerrar" onClick={() => setIsOpen(false)}>
-              X
-            </button>
-            
             <div
               className="editable"
               contentEditable={true}
               suppressContentEditableWarning={true}
             >
-              ✨ Aquí puedes escribir o poner código HTML...
+              HTML
             </div>
           </div>
         </div>
