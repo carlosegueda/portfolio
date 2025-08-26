@@ -22,8 +22,8 @@ function Navbar() {
       <Link to="/projects">
         <h3 className="frame">PROYECTOS</h3>
       </Link>
-
-      <Toggle />
+      {/*<Toggle /> */}
+      
     </nav>
   );
 }

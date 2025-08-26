@@ -5,7 +5,7 @@ export default function PaginaInicio() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/cv.pdf"; // ruta del PDF en public
-    link.download = "CV_DragonNegro.pdf";
+    link.download = "CV_CarlosOsegueda.pdf";
     window.open("/cv.pdf", "_blank"); // nombre al descargar
     document.body.appendChild(link);
     link.click();

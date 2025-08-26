@@ -49,3 +49,7 @@ body {
     height: 11.5rem;
     width: 50%;
 }
+
+.inputGrupo label{
+  font-size: 0.8rem;
+}
