@@ -1,0 +1,51 @@
+body.dark-mode {
+  --colormain: #000000;
+  --colorsec: #ff0037;
+  --colorsec2: #b31164;
+  --colormain2: #35051e;
+  --colorter: #d6d6d6;
+}
+
+body {
+  --colormain: #ff0037;
+  --colormain2: #b31164;
+  --colorsec: #000000;  
+  --colorsec2: #35051e;
+  --colorter: #d6d6d6;
+}
+
+
+.tituloContacto {
+  display: flex;
+  padding: 0 1.4rem 0 1.1rem;
+  margin-top: 3.5rem;
+}
+
+.tituloContacto > h1 {
+  margin: 0;
+  font-size: 1rem;
+  transform: scaleY(1.4);
+  letter-spacing: -0.1rem;
+}
+
+.panelContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 1.5rem 0rem 1.5rem;
+  width: 40rem;
+  
+}
+
+.sendMsj {
+    border: solid 5px var(--colorsec);
+    height: 11.5rem;
+    width: 50%;
+}
+
+.contactMe {
+    border: solid 5px var(--colorsec);
+    height: 11.5rem;
+    width: 50%;
+}
