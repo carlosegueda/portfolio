@@ -1,7 +1,51 @@
 import Navbar from "../componentes/Navbar";
 import "../css/contact.css";
+import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
 export default function PaginaContacto() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError("");
+
+    // Reemplaza estos valores con los tuyos propios
+    const serviceID = "service_16x8b2i";
+    const templateID = "template_f5suekw";
+    const userID = "0vtl3G-DqiwN6EyKt";
+
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log("Éxito:", response.status, response.text);
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        setError(
+          "Ocurrió un error al enviar el mensaje. Por favor, intenta nuevamente."
+        );
+      });
+  };
+
+
   return (
     <>
       <Navbar />
@@ -12,56 +56,48 @@ export default function PaginaContacto() {
 
       <div className="panelContact">
         <div className="sendMsj">
-          <form
-            id="form-mensaje"
-            netlify
-            netlify-honeypot="bot-field"
-            action="/"
-          >
-            <input type="hidden" name="form-name" value="contact"></input>
-            <input
-              type="hidden"
-              name="to"
-              value="carlosegueda2002@gmail.com"
-            ></input>
-            <div className="inputGrupo">
-              <label for="nombre">Nombre</label>
+          {submitted && (
+            <div>¡Mensaje enviado con éxito! Te contactaremos pronto.</div>
+          )}
+
+          <form onSubmit={handleSubmit}>
+            <div className="inputGroup">
+              <label htmlFor="name">NOMBRE:</label>
               <input
-                id="nombre"
-                name="nombre"
-                autocomplete="off"
                 type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 required
               />
             </div>
 
-            <div className="inputGrupo">
-              <label for="correo">Correo</label>
+            <div className="inputGroup">
+              <label htmlFor="email">EMAIL:</label>
               <input
-                id="correo"
-                name="correo"
-                autocomplete="off"
-                type="text"
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
             </div>
 
-            <div className="inputGrupo">
-              <label for="mensaje">Mensaje</label>
+            <div className="inputGroupMsj">
+              <label htmlFor="message">MENSAJE:</label>
               <textarea
-                id="mensaje"
-                name="mensaje"
-                autocomplete="off"
-                type="text"
+                id="message"
+                name="message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
                 required
-              />
+              ></textarea>
             </div>
 
-            <button class="agregar" type="submit">
-              <div class="front">
-                <span>Agregar</span>
-              </div>
-            </button>
+            <div className="boton"><button type="submit">ENVIAR MENSAJE</button></div>
           </form>
         </div>
         <div className="contactMe"> </div>
