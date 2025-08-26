@@ -8,22 +8,37 @@ export default function PaginaProyectos() {
 
       <form
         name="contact"
-        netlify
-        netlify-honeypot="bot-field"
-        action="/projects"
+        method="POST"
+        data-netlify="true"
+        action="/gracias.html"
+        netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="to" value="carlosegueda2002@gmail.com" />
 
-        <p hidden>
+        <div style={{ display: "none" }}>
           <label>
             No llenar: <input name="bot-field" />
           </label>
-        </p>
+        </div>
 
-        <input type="text" name="nombre" placeholder="Nombre" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          required
+          autoComplete="name"
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          autoComplete="email"
+        />
+
+        <textarea name="message" placeholder="Mensaje" required />
 
         <button type="submit">Enviar</button>
       </form>
