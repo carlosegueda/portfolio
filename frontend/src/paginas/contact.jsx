@@ -12,8 +12,18 @@ export default function PaginaContacto() {
 
       <div className="panelContact">
         <div className="sendMsj">
-          <form id="form-mensaje" netlify action="/" >
-            <input type="hidden" name="to" value="carlosegueda2002@gmail.com"></input>
+          <form
+            id="form-mensaje"
+            netlify
+            netlify-honeypot="bot-field"
+            action="/"
+          >
+            <input type="hidden" name="form-name" value="contact"></input>
+            <input
+              type="hidden"
+              name="to"
+              value="carlosegueda2002@gmail.com"
+            ></input>
             <div className="inputGrupo">
               <label for="nombre">Nombre</label>
               <input
@@ -38,7 +48,7 @@ export default function PaginaContacto() {
 
             <div className="inputGrupo">
               <label for="mensaje">Mensaje</label>
-              <textarea 
+              <textarea
                 id="mensaje"
                 name="mensaje"
                 autocomplete="off"
@@ -48,12 +58,10 @@ export default function PaginaContacto() {
             </div>
 
             <button class="agregar" type="submit">
-            <div class="front">
-              <span>Agregar</span>
-            </div>
-          </button>
-
-
+              <div class="front">
+                <span>Agregar</span>
+              </div>
+            </button>
           </form>
         </div>
         <div className="contactMe"> </div>
