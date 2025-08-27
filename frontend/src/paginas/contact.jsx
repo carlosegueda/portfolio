@@ -4,7 +4,6 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 
 export default function PaginaContacto() {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,16 +44,15 @@ export default function PaginaContacto() {
       });
   };
 
-
   return (
     <>
       <Navbar />
-      <div className="tituloContacto">
-        {" "}
-        <h1>CONTÁCTAME</h1>
-      </div>
 
       <div className="panelContact">
+        <div className="tituloContacto">
+          {" "}
+          <h1>CONTÁCTAME</h1>
+        </div>
         <div className="sendMsj">
           {submitted && (
             <div>¡Mensaje enviado con éxito! Te contactaremos pronto.</div>
@@ -99,7 +97,9 @@ export default function PaginaContacto() {
               ></textarea>
             </div>
 
-            <div className="boton"><button type="submit">ENVIAR MENSAJE</button></div>
+            <div className="boton">
+              <button type="submit">ENVIAR MENSAJE</button>
+            </div>
           </form>
         </div>
         <div className="contactMe"> </div>

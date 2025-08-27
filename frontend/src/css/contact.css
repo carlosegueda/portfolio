@@ -14,42 +14,45 @@ body {
   --colorter: #d6d6d6;
 }
 
-.tituloContacto {
-  display: flex;
-  padding: 0 1.4rem 0 1.1rem;
-  margin-top: 3.5rem;
-}
 
-.tituloContacto > h1 {
-  margin: 0;
-  font-size: 1rem;
-  transform: scaleY(1.4);
-  letter-spacing: -0.1rem;
-}
 
 .panelContact {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem 1.5rem 0rem 1.5rem;
   width: 40rem;
+  
+}
+
+.tituloContacto {
+  width: 13%;
+  height: 10%;
+  margin-top: 13.8rem;
+}
+
+.tituloContacto > h1 {
+  font-size: 1.75rem;
+  letter-spacing: -0.1rem;
+  transform: rotate(270deg) scaleY(2);
 }
 
 .sendMsj {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
   gap: 1rem;
   border: solid 5px var(--colorsec);
   height: 11.5rem;
-  width: 50%;
+  width: 40%;
   padding: 1rem;
 }
 
 .contactMe {
   border: solid 5px var(--colorsec);
+  margin-top: 2rem;
   height: 11.5rem;
-  width: 50%;
+  width: 40%;
   padding: 1rem;
 }
 
