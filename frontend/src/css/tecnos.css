@@ -17,6 +17,10 @@ body {
 .panelTecno {
   display: flex;
   width: 40rem;
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge viejo */
+  user-select: none;
 }
 
 .tituloTecno {
@@ -69,7 +73,6 @@ body {
 .tecno .icono {
   height: 3.5rem;
   filter: invert(0.8);
-  
 }
 
 .tecno.active {
@@ -98,13 +101,12 @@ body {
 .tecno.active .icono {
   grid-area: 1 / 1 / 6 / 2;
   align-items: center;
-  margin:0;
+  margin: 0;
   margin-left: -3.3rem;
   margin-right: -3rem;
   margin-top: 1.5rem;
   height: 10rem;
   clip-path: inset(0 0 0 33%);
-  
 }
 
 .tecno.active .tecno-label {
