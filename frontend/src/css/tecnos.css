@@ -72,9 +72,16 @@ body {
 }
 
 .tecno.active {
-  position: absolute; /* se mueve a posición fija */
-  top: 1.4rem; /* ajusta según necesites */
-  left: 4.7rem; /* ajusta según necesites */
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  padding: 0;
+  top: 1.4rem;
+  left: 4.7rem;
   width: 23rem;
   height: 13rem;
   z-index: 10;
@@ -84,4 +91,39 @@ body {
   transform: scale(0);
   opacity: 0;
   pointer-events: none;
+}
+
+.tecno.active img {
+  grid-area: 1 / 1 / 6 / 2;
+  height: 4rem;
+}
+
+.tecno.active .tecno-label {
+  font-size: 2rem;
+  grid-area: 1 / 2 / 2 / 4;
+  text-align: start;
+}
+
+.tecno-info {
+  display: none;
+}
+
+.tecno.active .tecno-info {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  color: var(--colorter);
+  font-size: 0.7rem;
+  grid-area: 2 / 2 / 4 / 4; /* se muestra solo cuando el div tiene la clase active */
+}
+
+.stars {
+  display: none;
+}
+
+.tecno.active .stars{
+  display: block;
+  grid-area: 1 / 4 / 4 / 5;
+  font-size: 1rem;
 }
