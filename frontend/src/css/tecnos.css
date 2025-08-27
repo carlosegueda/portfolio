@@ -14,136 +14,74 @@ body {
   --colorter: #d6d6d6;
 }
 
-.tituloTecnos {
+.panelTecno {
   display: flex;
-  padding: 0 1.4rem 0 1.1rem;
-  margin-top: 4rem;
+  width: 40rem;
 }
 
-.tituloTecnos > h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  transform: scaleY(1.4);
+.tituloTecno {
+  width: 13%;
+  height: 10%;
+  margin-top: 13.8rem;
+}
+
+.tituloTecno h1 {
+  font-size: 1.75rem;
   letter-spacing: -0.1rem;
+  transform: rotate(270deg) scaleY(2);
 }
-
-.panelTecnos {
+.tecno-container {
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
-  grid-template-rows: repeat(2); /* 2 filas de 200px (puedes ajustar) */
-  column-gap: 1.9rem;
-  row-gap: 0.9rem;
-  padding: 0.4rem 1rem 0.4rem 1rem;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 1rem; /* espacio entre filas y columnas */
+  padding: 1rem;
+  position: relative;
+  margin-top: 2rem; /* para los divs absolutos cuando se expandan */
 }
 
-.panelTecnos > div {
-  cursor: pointer;
+.tecno {
+  background: black;
+  transition: all 0.3s ease;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
   gap: 0rem;
   height: 5rem;
+  padding: 0.3rem;
   width: 5rem;
   padding: 1rem;
   border: 7px solid var(--colorsec);
 }
 
-.tecno1 > h1 {
-  font-size: 1.2rem;
+.tecno-label {
+  font-size: 1rem;
   letter-spacing: -0.1rem;
   margin: 0;
   transform: scaleY(1.4);
   margin-top: 0.5rem;
+  color: #d6d6d6;
 }
 
-.tecno2 > h1 {
-  font-size: 1.2rem;
-  margin: 0;
-  letter-spacing: -0.1rem;
-  transform: scaleY(1.4);
-  margin-top: 0.5rem;
-}
-
-.tecno3 > h1 {
-  font-size: 1.2rem;
-  margin: 0;
-  letter-spacing: -0.1rem;
-  transform: scaleY(1.4);
-  margin-top: 0.5rem;
-}
-
-.tecno4 > h1 {
-  font-size: 1.2rem;
-  margin: 0;
-  letter-spacing: -0.1rem;
-  transform: scaleY(1.4);
-  margin-top: 0.5rem;
-}
-
-.tecno5 > h1 {
-  font-size: 1.2rem;
-  margin: 0;
-  letter-spacing: -0.1rem;
-  transform: scaleY(1.4);
-  margin-top: 0.5rem;
-}
-
-.tecno6 > h1 {
-  font-size: 1.1rem;
-  margin: 0;
-  letter-spacing: -0.1rem;
-  transform: scaleY(1.4);
-  margin-top: 0.5rem;
-}
-
-.panelTecnos > div > img {
+.tecno img {
   height: 3.5rem;
+  filter: invert(0.8);
 }
 
-.overlay {
-  position: fixed;
-  top: 7rem;
-  left: 15rem;
-  background: rgb(187, 16, 16);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tecno.active {
+  position: absolute; /* se mueve a posición fija */
+  top: 1.4rem; /* ajusta según necesites */
+  left: 4.7rem; /* ajusta según necesites */
+  width: 23rem;
+  height: 13rem;
+  z-index: 10;
 }
 
-/* Caja modal */
-.modal {
-  background: rgb(136, 10, 10);
-  padding: 20px;
-  width: 15rem;
-  border: solid 5px var(--colorsec);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-/* Botón cerrar */
-.cerrar {
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #000000;
-}
-
-.cerrar:hover {
-  background: #b91c1c;
-}
-
-/* Área editable */
-.editable {
-  width: 100%;
-  height: 10rem;
-  margin-top: 10px;
-  padding: 10px;
-  overflow: auto;
-  border-radius: 6px;
+.tecno.hidden {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
 }

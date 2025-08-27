@@ -67,6 +67,7 @@ export default function PaginaContacto() {
                 type="text"
                 id="name"
                 name="name"
+                autocomplete="off"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -90,6 +91,7 @@ export default function PaginaContacto() {
               <textarea
                 id="message"
                 name="message"
+                autocomplete="off"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}

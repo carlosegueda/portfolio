@@ -3,74 +3,62 @@ import "../css/tecnos.css";
 import { useState } from "react";
 
 export default function PaginaTecnologias() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const tecnoList = Array.from({ length: 8 }, (_, i) => i + 1);
+  const nombresList = [
+    "HTML",
+    "JS",
+    "CSS",
+    "PYTHON",
+    "REACT",
+    "TAILWIND",
+    "MYSQL",
+    "PINGA",
+  ];
+  const imagenesList = [
+    "htmlN.png",
+    "jsN.png",
+    "cssN.png",
+    "pyN.png",
+    "reactN.png",
+    "tailwindN.png",
+    "htmlN.png",
+    "reactN.png",
+  ];
+
+  const handleMouseDown = (index) => {
+    setActiveIndex(index);
+
+    // Escuchar cuando se suelte el mouse en cualquier parte
+    const handleMouseUp = () => {
+      setActiveIndex(null);
+      window.removeEventListener("mouseup", handleMouseUp); // limpiar listener
+    };
+
+    window.addEventListener("mouseup", handleMouseUp);
+  };
 
   return (
     <>
       <Navbar />
-      <div className="tituloTecnos">
-        {" "}
-        <h1>TECNOLOGÍAS</h1>
-      </div>
-      <div className="panelTecnos">
-        <div className="tecno1" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
-          {" "}
-          <img src="htmlR.png" />
-          <h1>HTML</h1>
-        </div>
-
-        
-
-        <div className="tecno2" >
-          {" "}
-          <img src="jsR.png" />
-          <h1>JS</h1>
-        </div>
-        <div className="tecno3">
-          {" "}
-          <img src="cssR.png" />
-          <h1>CSS</h1>
-        </div>
-        <div className="tecno4">
-          {" "}
-          <img src="pyR.png" />
-          <h1>PYTHON</h1>
-        </div>
-        <div className="tecno5">
-          {" "}
-          <img src="reactR.png" />
-          <h1>REACT</h1>
-        </div>
-        <div className="tecno6">
-          {" "}
-          <img src="tailwindR.png" />
-          <h1>TAILWIND</h1>
-        </div>
-        <div className="tecno5">
-          {" "}
-          <img src="reactR.png" />
-          <h1>REACT</h1>
-        </div>
-        <div className="tecno6">
-          {" "}
-          <img src="tailwindR.png" />
-          <h1>TAILWIND</h1>
-        </div>
-        {isOpen && (
-        <div className="overlay">
-          <div className="modal">
-            <div
-              className="editable"
-              contentEditable={true}
-              suppressContentEditableWarning={true}
-            >
-              HTML
-            </div>
+      <div className="panelTecno">
+        <div className="tituloTecno"><h1>TECNOLOGÍAS</h1></div>
+        <div className="tecno-container">
+        {nombresList.map((name, index) => (
+          <div
+            key={index}
+            className={`tecno ${activeIndex === index ? "active" : ""} ${
+              activeIndex !== null && activeIndex !== index ? "hidden" : ""
+            }`}
+            onMouseDown={() => handleMouseDown(index)}
+          >
+            <img src={imagenesList[index]} alt={name} />
+            <span className="tecno-label">{name}</span>
           </div>
-        </div>
-      )}
+        ))}
       </div>
-
+      </div>
       
     </>
   );
