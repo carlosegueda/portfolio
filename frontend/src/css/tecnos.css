@@ -66,9 +66,10 @@ body {
   color: #d6d6d6;
 }
 
-.tecno img {
+.tecno .icono {
   height: 3.5rem;
   filter: invert(0.8);
+  
 }
 
 .tecno.active {
@@ -77,6 +78,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: start;
+  gap: -2rem;
   justify-content: start;
   flex-direction: row;
   padding: 0;
@@ -93,37 +95,65 @@ body {
   pointer-events: none;
 }
 
-.tecno.active img {
+.tecno.active .icono {
   grid-area: 1 / 1 / 6 / 2;
-  height: 4rem;
+  align-items: center;
+  margin:0;
+  margin-left: -3.3rem;
+  margin-right: -3rem;
+  margin-top: 1.5rem;
+  height: 10rem;
+  clip-path: inset(0 0 0 33%);
+  
 }
 
 .tecno.active .tecno-label {
-  font-size: 2rem;
+  font-size: 2.4rem;
   grid-area: 1 / 2 / 2 / 4;
-  text-align: start;
+  text-align: end;
+  letter-spacing: -0.3rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
 }
 
 .tecno-info {
   display: none;
+  padding: 0;
+  width: 13rem;
 }
 
 .tecno.active .tecno-info {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: start;
-  text-align: start;
+  text-align: end;
+  justify-content: center;
+  height: 7.1rem;
   color: var(--colorter);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin-left: 1.5rem;
   grid-area: 2 / 2 / 4 / 4; /* se muestra solo cuando el div tiene la clase active */
 }
 
 .stars {
   display: none;
+  padding: 0;
+  width: 3.4rem;
 }
 
-.tecno.active .stars{
+.tecno.active .stars {
   display: block;
+  flex-direction: column;
   grid-area: 1 / 4 / 4 / 5;
   font-size: 1rem;
+}
+
+.tecno.active .estrella1 {
+  height: 3.1rem;
+  width: 3.1rem;
+  margin-bottom: -1rem;
+  margin-left: 0.5rem;
 }

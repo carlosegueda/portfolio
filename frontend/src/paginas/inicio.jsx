@@ -19,10 +19,10 @@ export default function PaginaInicio() {
         {" "}
         <h1>CARLOS&nbsp;&nbsp;OSEGUEDA</h1>
         <div class="imagen-flotante1">
-          <img src="star.png" />
+          <img src="shine.png" />
         </div>
         <div class="imagen-flotante2">
-          <img src="star.png" />
+          <img src="shine.png" />
         </div>
         <div class="imagen-flotante3">
           <img src="twostars.png" />
