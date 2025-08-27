@@ -4,6 +4,16 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 
 export default function PaginaContacto() {
+  const divs = Array.from({ length: 4 }, (_, i) => i + 1);
+
+  const link = [
+    "https://github.com/carlosegueda",
+    "https://www.linkedin.com/in/carlos-osegueda-b9974337a",
+    "/whatsapp",
+    "/gmail",
+  ];
+  const imagenesList = ["git.png", "lkdn.png", "wa.png", "gmail.png"];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,6 +52,20 @@ export default function PaginaContacto() {
           "Ocurrió un error al enviar el mensaje. Por favor, intenta nuevamente."
         );
       });
+  };
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleMouseDown = (index) => {
+    setActiveIndex(index);
+
+    // Escuchar cuando se suelte el mouse en cualquier parte
+    const handleMouseUp = () => {
+      setActiveIndex(null);
+      window.removeEventListener("mouseup", handleMouseUp); // limpiar listener
+    };
+
+    window.addEventListener("mouseup", handleMouseUp);
   };
 
   return (
@@ -102,7 +126,28 @@ export default function PaginaContacto() {
             </div>
           </form>
         </div>
-        <div className="contactMe"> </div>
+        <div className="contactMe">
+          <h2>carlosegueda2002@gmai.com</h2>
+          <div className="redes">
+            {divs.map((num) => (
+              <button
+                className="boton-red"
+                onClick={() => window.open(`${link[num - 1]}`, "_blank")}
+              >
+                <div
+                  key={num}
+                  className={`red ${activeIndex === num ? "active" : ""} ${
+                    activeIndex !== null && activeIndex !== num ? "hidden" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseDown(num)} // cuando pasas el mouse
+                  onMouseLeave={() => setActiveIndex(null)}
+                >
+                  <img src={imagenesList[num - 1]} className="logo" />
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
       <div></div>
     </>

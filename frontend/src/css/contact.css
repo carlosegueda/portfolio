@@ -14,15 +14,12 @@ body {
   --colorter: #d6d6d6;
 }
 
-
-
 .panelContact {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   width: 40rem;
-  
 }
 
 .tituloContacto {
@@ -40,17 +37,9 @@ body {
 .sendMsj {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   gap: 1rem;
   border: solid 5px var(--colorsec);
-  height: 11.5rem;
-  width: 40%;
-  padding: 1rem;
-}
-
-.contactMe {
-  border: solid 5px var(--colorsec);
-  margin-top: 2rem;
   height: 11.5rem;
   width: 40%;
   padding: 1rem;
@@ -67,7 +56,6 @@ body {
   transform: scaleY(2);
   margin-top: 0.7rem;
   font-size: 0.7rem;
-
 }
 
 .inputGroup input {
@@ -83,11 +71,11 @@ body {
   transition: all 0.1s ease;
 }
 
-.inputGroup input:hover{
- background-color: var(--colorsec);
+.inputGroup input:hover {
+  background-color: var(--colorsec);
 }
 
-.inputGroup input:focus{
+.inputGroup input:focus {
   outline: none;
   background-color: var(--colorter);
   box-shadow: inset 0 0 0 2px var(--colorsec);
@@ -120,19 +108,17 @@ body {
   border: none;
 }
 
-.inputGroupMsj textarea:hover{
+.inputGroupMsj textarea:hover {
   background-color: var(--colorsec);
-  
 }
 
-.inputGroupMsj textarea:focus{
+.inputGroupMsj textarea:focus {
   outline: none;
   background-color: var(--colorter);
   box-shadow: inset 0 0 0 2px var(--colorsec);
 }
 
-
-.boton{
+.boton {
   height: 2rem;
   margin-top: 1rem;
   display: flex;
@@ -140,7 +126,7 @@ body {
   align-items: center;
 }
 
-.boton button{
+.boton button {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -157,7 +143,76 @@ body {
   border: none;
 }
 
-.boton button:hover{
+.boton button:hover {
   color: var(--colormain);
   background-color: var(--colorsec);
+}
+
+.contactMe {
+  border: solid 5px var(--colorsec);
+  margin-top: 3.5rem;
+  height: 11.5rem;
+  width: 40%;
+  padding: 1rem;
+}
+
+.redes {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+.redes div img {
+  height: 3rem;
+}
+
+.contactMe h2 {
+  font-size: 0.5rem;
+  transform: scaleY(2);
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.boton-red{
+  all: unset;
+}
+
+
+.redes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border: 4px solid var(--colorsec);
+  height: 4rem;
+  width: 4rem;
+  pointer-events: auto;
+}
+
+.redes div.active {
+  position: absolute;
+  display: grid;
+  align-items: start;
+  padding: 0;
+  top: 7.4rem;
+  left: 29.6rem;
+  width: 9.8rem;
+  height: 9rem;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.redes.active div .boton{
+  background-color: red;
+}
+
+.redes div.hidden {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
 }
