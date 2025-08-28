@@ -54,19 +54,7 @@ export default function PaginaContacto() {
       });
   };
 
-  const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleMouseDown = (index) => {
-    setActiveIndex(index);
-
-    // Escuchar cuando se suelte el mouse en cualquier parte
-    const handleMouseUp = () => {
-      setActiveIndex(null);
-      window.removeEventListener("mouseup", handleMouseUp); // limpiar listener
-    };
-
-    window.addEventListener("mouseup", handleMouseUp);
-  };
 
   return (
     <>
@@ -136,11 +124,7 @@ export default function PaginaContacto() {
               >
                 <div
                   key={num}
-                  className={`red ${activeIndex === num ? "active" : ""} ${
-                    activeIndex !== null && activeIndex !== num ? "hidden" : ""
-                  }`}
-                  onMouseEnter={() => handleMouseDown(num)} // cuando pasas el mouse
-                  onMouseLeave={() => setActiveIndex(null)}
+                  className="redes4"
                 >
                   <img src={imagenesList[num - 1]} className="logo" />
                 </div>
@@ -149,7 +133,7 @@ export default function PaginaContacto() {
           </div>
         </div>
       </div>
-      <div></div>
+      
     </>
   );
 }
