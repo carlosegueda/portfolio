@@ -15,7 +15,7 @@ export default function PaginaProyectos() {
           <div className="proyecto1">
             <h1>GESTOR DE INVENTARIO</h1>
             <div className="infoProy">
-              <img src="reactR.png" />{" "}
+              <img src="inventory.png" onClick={() => window.open("https://github.com/carlosegueda/inventory_manager", "_blank")}/>{" "}
               <p>
                 • APLICACIÓN WEB COMPLETA DESARROLLADA CON HTML, CSS,
                 JAVASCRIPT, NODE.JS, EXPRESS Y SQL QUE PERMITE A LAS TIENDAS
@@ -30,7 +30,7 @@ export default function PaginaProyectos() {
               </p>
             </div>
             <div className="links">
-              <button>
+              <button onClick={() => window.open("https://github.com/carlosegueda/inventory_manager", "_blank")}>
                 <h3>VISITAR</h3>
               </button>
             </div>

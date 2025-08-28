@@ -71,8 +71,9 @@ body {
   height: 80%;
 }
 .infoProy img {
-  height: 1rem;
-  width: 40%;
+  height: 6.5rem;
+  width: 12rem;
+  border: solid 4px var(--colorsec);
 }
 
 .infoProy p {
