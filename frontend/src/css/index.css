@@ -61,6 +61,7 @@ body {
   color: var(--colormain);
   text-decoration: none;
   margin: 0;
+  margin-bottom: 0.25rem;
   z-index: 1000;
   font-size: 0.6rem;
   transform: scaleY(1.7);
@@ -174,7 +175,7 @@ body {
   width: 40rem;
   gap: none;
   height: auto;
-  margin-top: 2.4rem;
+  margin-top: 2.6rem;
 
   /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
 }
@@ -324,13 +325,6 @@ h5 {
   transform: scaley(2);
 }
 
-.part2 {
-  border: 5px solid var(--colorsec);
-  width: 40rem;
-  display: flex;
-  height: 9rem;
-}
-
 h4 {
   color: var(--colormain);
   font-size: 0.7rem;
@@ -438,4 +432,13 @@ h4 {
 .imagen-flotante8 img {
   height: 4.5rem;
   width: 8rem;
+}
+
+.part2 {
+  border: 5px solid var(--colorsec);
+  width: 40rem;
+  display: flex;
+  height: 16rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
 }

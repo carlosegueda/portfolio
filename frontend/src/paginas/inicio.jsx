@@ -70,7 +70,6 @@ export default function PaginaInicio() {
             </div>
           </div>
         </div>
-        <hr />
         <div className="part2"></div>
       </div>
     </>

@@ -18,10 +18,10 @@ export default function PaginaProyectos() {
               <img src="inventory.png" onClick={() => window.open("https://github.com/carlosegueda/inventory_manager", "_blank")}/>{" "}
               <p>
                 • APLICACIÓN WEB COMPLETA DESARROLLADA CON HTML, CSS,
-                JAVASCRIPT, NODE.JS, EXPRESS Y SQL QUE PERMITE A LAS TIENDAS
-                GESTIONAR SU INVENTARIO DE MANERA EFICIENTE.
+                JAVASCRIPT, NODE.JS, EXPRESS Y SQL QUE PERMITE
+                GESTIONAR EL INVENTARIO DE MANERA EFICIENTE.
                 <span class="espacio"></span>• PERMITE REGISTRAR, EDITAR Y
-                VISUALIZAR PRODUCTOS EN STOCK, GENERAR FACTURAS AUTOMÁTICAS AL
+                VISUALIZAR PRODUCTOS EN STOCK, GENERAR FACTURAS AL
                 REALIZAR VENTAS Y ACTUALIZAR AUTOMÁTICAMENTE LAS CANTIDADES
                 DISPONIBLES.
                 <span class="espacio"></span>• INCLUYE UN FLUJO COMPLETO DE
@@ -51,7 +51,7 @@ export default function PaginaProyectos() {
               </p>
             </div>
             <div className="links">
-              <button>
+              <button className="visitar" onClick={() => window.open("https://pill-buddy.netlify.app", "_blank")}>
                 <h3>VISITAR</h3>
               </button>
             </div>

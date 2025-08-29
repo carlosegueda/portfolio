@@ -10,7 +10,7 @@ export default function PaginaContacto() {
     "https://github.com/carlosegueda",
     "https://www.linkedin.com/in/carlos-osegueda-b9974337a",
     "/whatsapp",
-    "/gmail",
+    "https://mail.google.com/mail/?view=cm&fs=1&to=carlosegueda2002@gmail.com&su=Contacto&body=Hola%2C%20te%20escribo%20desde%20tu%20portfolio.",
   ];
   const imagenesList = ["git.png", "lkdn.png", "wa.png", "gmail.png"];
 

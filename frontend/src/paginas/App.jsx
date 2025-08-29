@@ -5,6 +5,7 @@ import PaginaInicio from "./inicio.jsx"
 import PaginaContacto from "./contact.jsx"
 import PaginaTecnologias from "./tecnos.jsx"
 import PaginaProyectos from "./projects.jsx"
+import PaginaWhatsapp from "./whatsapp.jsx";
 
 function App() {
   //AQUI EDITO MI HTML
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contact" element={<PaginaContacto />} />
         <Route path="/tecnos" element={<PaginaTecnologias />} />
         <Route path="/projects" element={<PaginaProyectos />} />
+        <Route path="/whatsapp" element={<PaginaWhatsapp />} />
       </Routes>
       
     </>
