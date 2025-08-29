@@ -12,7 +12,15 @@ body {
   --colorsec2: #b31164;
   --colormain2: #35051e;
   --colorter: #d6d6d6;
+  margin: 0;
+  padding: 0rem;
+  overflow-x: hidden;
 }
+
+:root{
+  height: min-content;
+}
+
 
 .panelTecno {
   display: flex;
@@ -34,12 +42,14 @@ body {
   letter-spacing: -0.1rem;
   transform: rotate(270deg) scaleY(2.5);
 }
+
 .tecno-container {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
   gap: 1rem; /* espacio entre filas y columnas */
   padding: 1rem;
+  padding-bottom: 0;
   position: relative;
   margin-top: 2rem; /* para los divs absolutos cuando se expandan */
 }

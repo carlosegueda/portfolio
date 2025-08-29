@@ -54,6 +54,14 @@ export default function PaginaContacto() {
       });
   };
 
+  const handleReset = () => {
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
+  };
+
 
 
   return (
@@ -66,6 +74,7 @@ export default function PaginaContacto() {
           <h1>CONTÁCTAME</h1>
         </div>
         <div className="sendMsj">
+          <div className="tituloMsj"><h3>ENVÍAME UN MENSAJE</h3></div>
           {submitted && (
             <div>¡Mensaje enviado con éxito! Te contactaremos pronto.</div>
           )}
@@ -110,7 +119,8 @@ export default function PaginaContacto() {
             </div>
 
             <div className="boton">
-              <button type="submit">ENVIAR MENSAJE</button>
+              <button type="button" className="limpiar" onClick={handleReset}>LIMPIAR</button>
+              <button type="submit" className="enviar">ENVIAR</button>
             </div>
           </form>
         </div>

@@ -38,7 +38,7 @@ export default function PaginaProyectos() {
           <div className="proyecto2">
             <h1>PILL BUDDY - SITIO WEB</h1>
             <div className="infoProy">
-              <img src="reactR.png" />{" "}
+              <img src="pillbuddy.png" />{" "}
               <p>
                 • APLICACIÓN WEB ESTÁTICA DESARROLLADA CON REACT, HTML Y CSS,
                 DISEÑADA PARA UN PASTILLERO ELECTRÓNICO.
