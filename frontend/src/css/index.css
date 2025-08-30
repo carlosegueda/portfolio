@@ -181,7 +181,6 @@ body {
 
 .mainPanel h1 {
   color: var(--colorsec);
-  position: relative;
   z-index: 1;
   font-size: 3rem;
   letter-spacing: -0.1rem;
@@ -525,7 +524,7 @@ h4 {
 
   .mainPanel h1 {
     color: var(--colorsec);
-    position: fixed;
+    position: static;
     z-index: 1;
     font-size: 0.98rem;
     margin: 0;
