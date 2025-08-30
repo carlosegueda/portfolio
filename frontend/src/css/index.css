@@ -528,7 +528,7 @@ h4 {
     overflow-wrap: break-word;
     white-space: normal;
     text-align: start;
-    line-height: 1.43rem;
+    line-height: 1.46rem;
     z-index: 1;
     font-size: 1.85rem;
     margin: 0;
@@ -579,7 +579,7 @@ h4 {
   }
   
   .cargo h2 {
-    font-size: 0.76rem;
+    font-size: 0.74em;
     color: var(--colorter);
     margin: 0;
     font-weight: 900;
@@ -589,7 +589,7 @@ h4 {
   }
 
   .cargo h3 {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--colorter);
     margin: 0;
     font-weight: 900;
@@ -612,7 +612,7 @@ h4 {
 
   .cargo p {
     margin: 0;
-    font-size: 0.45rem;
+    font-size: 0.44rem;
     width: 100%;
     color: var(--colorsec);
     margin-bottom: 0rem;
