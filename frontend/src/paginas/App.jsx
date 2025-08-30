@@ -10,12 +10,20 @@ import Navbar from "../componentes/Navbar";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 900);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // Detecta pantallas con ancho CSS menor o igual a 400px
+    const mediaQuery = window.matchMedia("(max-width: 400px)");
+
+    // Actualiza el estado según la media query
+    const handleChange = (e) => setIsMobile(e.matches);
+
+    // Llama al inicio para establecer el estado correcto
+    handleChange(mediaQuery);
+
+    // Escucha cambios de tamaño de pantalla en tiempo real
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   if (isMobile) {

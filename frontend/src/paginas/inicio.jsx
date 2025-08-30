@@ -14,7 +14,6 @@ export default function PaginaInicio() {
 
   return (
     <>
-      <Navbar />
       <div className="mainPanel">
         {" "}
         <h1>CARLOS&nbsp;&nbsp;OSEGUEDA</h1>

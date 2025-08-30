@@ -1,4 +1,4 @@
-import Navbar from "../componentes/Navbar";
+
 import "../css/contact.css";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
