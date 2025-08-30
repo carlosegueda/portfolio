@@ -16,8 +16,12 @@ export default function PaginaInicio() {
     <>
       <div className="mainPanel">
         {" "}
-        <div className="tituloInicio"><h1>CARLOS <br />OSEGUEDA</h1></div>
-        
+        <div className="tituloInicio">
+          <h1>
+            CARLOS&nbsp;&nbsp;
+            OSEGUEDA
+          </h1>
+        </div>
         <div class="imagen-flotante1">
           <img src="shine.png" />
         </div>
@@ -48,8 +52,12 @@ export default function PaginaInicio() {
           </div>
           <div className="cargo">
             <div className="titulo2">
-              <h2>INGENIERO EN SISTEMAS</h2>
-              <h3>DISEÑADOR UX/UI</h3>
+              <div className="Ttitulo">
+                <h2>INGENIERO EN SISTEMAS</h2>
+              </div>
+              <div className="Tcargo">
+                <h3>DISEÑADOR UX/UI</h3>
+              </div>
             </div>
 
             <div className="parrafo">
