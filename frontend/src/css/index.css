@@ -179,7 +179,6 @@ body {
   /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
 }
 
-
 .mainPanel h1 {
   color: var(--colorsec);
   z-index: 1;
@@ -261,7 +260,6 @@ hr {
   display: flex;
   flex-direction: column;
   width: 15%;
-
   height: 7.8rem;
 }
 
@@ -564,7 +562,6 @@ h4 {
 
   .cargo div {
     height: auto;
-    
   }
 
   .cargo .titulo2 {
@@ -577,7 +574,7 @@ h4 {
     margin-top: 0rem;
     height: auto;
   }
-  
+
   .cargo h2 {
     font-size: 0.74em;
     color: var(--colorter);
@@ -597,10 +594,6 @@ h4 {
     height: auto;
   }
 
-  .foto {
-    display: none;
-  }
-
   .cargo .parrafo {
     display: flex;
     justify-content: center;
@@ -608,7 +601,6 @@ h4 {
     width: 60%;
     height: 8.3rem;
   }
-
 
   .cargo p {
     margin: 0;
@@ -626,20 +618,27 @@ h4 {
     letter-spacing: -0.01rem;
   }
 
-
+  .foto {
+    position: absolute;
+    top: 7rem;
+    left: 8.5rem
+  }
 
   .foto img {
-    margin-top: auto;
-    /* siempre encima del HTML */
+    height: 4rem;
+    width: 3.2rem;
     z-index: 9998;
   }
 
   .cv {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    position: absolute;
+    top: 15.7rem;
+    left: 5.5rem;
+    width: 30%;
     border: 5px solid var(--colorsec);
-    height: 4rem;
+    height: 3rem;
     margin-left: 2.5rem;
   }
 
@@ -647,7 +646,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 60%;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 4px black solid;
@@ -672,7 +671,7 @@ h4 {
     justify-content: center;
     background-color: var(--colorsec);
     padding: 0;
-    height: 30%;
+    height: 40%;
   }
 
   h5 {
@@ -685,26 +684,28 @@ h4 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9997; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 1rem;
-    left: 1rem;
+    top: 0.4rem;
+    left: 5.3rem;
     transform: scaleY(1.4);
   }
 
   .imagen-flotante1 img {
-    height: 1rem;
+    height: 3rem;
+    width: 2.5rem;
   }
 
   .imagen-flotante2 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9997; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 1rem;
-    left: 1rem;
+    top: 4.2rem;
+    left: -0.35rem;
     transform: scaleY(1.4);
   }
 
   .imagen-flotante2 img {
-    height: 1rem;
+    height: 3rem;
+    width: 2.5rem;
   }
 
   .imagen-flotante3 {
@@ -714,13 +715,14 @@ h4 {
     top: 1rem;
     left: 1rem;
     transform: scaleY(1.4);
+    display: none;
   }
   .imagen-flotante4 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 1rem;
-    left: 1rem;
+    top: 11rem;
+    left: 7.7rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante5 {
@@ -730,21 +732,22 @@ h4 {
     top: 1rem;
     left: 1rem;
     transform: scaleY(1.4);
+    display: none;
   }
   .imagen-flotante6 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 1rem;
-    left: 1rem;
+    top: 0rem;
+    left: 0rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante7 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 1rem;
-    left: 1rem;
+    top: 4.5rem;
+    left: 9rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante8 {
@@ -761,27 +764,24 @@ h4 {
     width: 1rem;
   }
   .imagen-flotante4 img {
-    height: 1rem;
-    width: 1rem;
+    height: 4rem;
+    width: 5rem;
+    transform: rotate(190deg);
   }
   .imagen-flotante5 img {
     height: 1rem;
     width: 1rem;
   }
   .imagen-flotante6 img {
-    height: 1rem;
-    width: 1rem;
+    height: 4rem;
+    width: 7rem;
   }
   .imagen-flotante7 img {
-    height: 1rem;
-    width: 1rem;
+    height: 4rem;
+    width: 5rem;
   }
   .imagen-flotante8 img {
     height: 1rem;
     width: 1rem;
-  }
-
-  body img {
-    display: none;
   }
 }
