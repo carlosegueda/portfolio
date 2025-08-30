@@ -21,8 +21,8 @@ export default function Clock() {
   });
 
   return (
-    <div className="fecha">
-      <h4>{`${dateString} -  ${timeString}`}</h4>
+    <div>
+      <h4>{` ${timeString}`}</h4>
     </div>
   );
 }
