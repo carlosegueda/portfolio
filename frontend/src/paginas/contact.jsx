@@ -1,4 +1,3 @@
-
 import "../css/contact.css";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
@@ -58,11 +57,9 @@ export default function PaginaContacto() {
     setFormData({
       name: "",
       email: "",
-      message: ""
+      message: "",
     });
   };
-
-
 
   return (
     <>
@@ -72,7 +69,9 @@ export default function PaginaContacto() {
           <h1>CONTÁCTAME</h1>
         </div>
         <div className="sendMsj">
-          <div className="tituloMsj"><h3>ENVÍAME UN MENSAJE</h3></div>
+          <div className="tituloMsj">
+            <h3>ENVÍAME UN MENSAJE</h3>
+          </div>
           {submitted && (
             <div>¡Mensaje enviado con éxito! Te contactaremos pronto.</div>
           )}
@@ -84,7 +83,7 @@ export default function PaginaContacto() {
                 type="text"
                 id="name"
                 name="name"
-                autocomplete="off"
+                autoComplete="off"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -108,7 +107,7 @@ export default function PaginaContacto() {
               <textarea
                 id="message"
                 name="message"
-                autocomplete="off"
+                autoComplete="off"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -117,8 +116,12 @@ export default function PaginaContacto() {
             </div>
 
             <div className="boton">
-              <button type="button" className="limpiar" onClick={handleReset}>LIMPIAR</button>
-              <button type="submit" className="enviar">ENVIAR</button>
+              <button type="button" className="limpiar" onClick={handleReset}>
+                LIMPIAR
+              </button>
+              <button type="submit" className="enviar">
+                ENVIAR
+              </button>
             </div>
           </form>
         </div>
@@ -127,13 +130,11 @@ export default function PaginaContacto() {
           <div className="redes">
             {divs.map((num) => (
               <button
+                key={num}
                 className="boton-red"
                 onClick={() => window.open(`${link[num - 1]}`, "_blank")}
               >
-                <div
-                  key={num}
-                  className="redes4"
-                >
+                <div className="redes4">
                   <img src={imagenesList[num - 1]} className="logo" />
                 </div>
               </button>
@@ -141,7 +142,6 @@ export default function PaginaContacto() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }
