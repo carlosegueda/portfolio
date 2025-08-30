@@ -722,7 +722,7 @@ h4 {
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
     top: 11rem;
-    left: 7.7rem;
+    left: 7.2rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante5 {
@@ -747,7 +747,7 @@ h4 {
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
     top: 4.5rem;
-    left: 7.8rem;
+    left: 7.4rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante8 {
