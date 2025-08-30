@@ -16,7 +16,8 @@ export default function PaginaInicio() {
     <>
       <div className="mainPanel">
         {" "}
-        <h1>CARLOS&nbsp;&nbsp;OSEGUEDA</h1>
+        <div className="tituloInicio"><h1>CARLOS <br />OSEGUEDA</h1></div>
+        
         <div class="imagen-flotante1">
           <img src="shine.png" />
         </div>
