@@ -5,7 +5,6 @@ import "../css/projects.css";
 export default function PaginaWhatsapp() {
   return (
     <>
-      <Navbar />    
       <div className="panelWp">
         <h2>CARLOS OSEGUEDA</h2>
         <h2>+504 8738-1209</h2>

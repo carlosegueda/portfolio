@@ -63,7 +63,7 @@ export default function PaginaInicio() {
           <div className="cv">
             {" "}
             <div className="cvin">
-              <Clock />
+              HOLA
             </div>{" "}
             <div className="cv2" onClick={handleDownload}>
               <h3>DESCARGAR CV</h3>

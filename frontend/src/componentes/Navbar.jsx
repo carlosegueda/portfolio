@@ -6,7 +6,9 @@ import Clock from "./Clock";
 function Navbar() {
   return (
     <nav className="navbar flex items-center gap-4">
-        
+      <div className="fecha">  <Clock /></div>
+     
+
       <Link to="/" className="titulo">
         <h3 className="frame">INICIO</h3>
       </Link>
@@ -23,7 +25,6 @@ function Navbar() {
         <h3 className="frame">PROYECTOS</h3>
       </Link>
       {/*<Toggle /> */}
-      
     </nav>
   );
 }

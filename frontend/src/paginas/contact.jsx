@@ -66,8 +66,6 @@ export default function PaginaContacto() {
 
   return (
     <>
-      <Navbar />
-
       <div className="panelContact">
         <div className="tituloContacto">
           {" "}

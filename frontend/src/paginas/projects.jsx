@@ -5,7 +5,6 @@ import "../css/projects.css";
 export default function PaginaProyectos() {
   return (
     <>
-      <Navbar />
       <div className="panelProy">
         <div className="base"></div>
         <div className="tituloProy">

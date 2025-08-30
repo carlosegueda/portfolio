@@ -434,35 +434,7 @@ h4 {
   width: 8rem;
 }
 
-.part2 {
-  border: 5px solid var(--colorsec);
-  width: 40rem;
-  display: flex;
-  height: 16rem;
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
+.fecha{
+  margin-right: 2rem;
+  margin-left: -2.4rem;
 }
-
-.part2 div h1{
-  font-size: 1.5rem;
-  letter-spacing: -0.1rem;
-  margin: 0.5rem 0 1rem 0;
-  transform: scaleY(2.5);
-}
-
-.part3 {
-  border: 5px solid var(--colorsec);
-  width: 40rem;
-  display: flex;
-  height: 16rem;
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
-}
-
-.part3 div h1{
-  font-size: 1.5rem;
-  letter-spacing: -0.1rem;
-  margin: 0.5rem 0 1rem 0;
-  transform: scaleY(2.5);
-}
-

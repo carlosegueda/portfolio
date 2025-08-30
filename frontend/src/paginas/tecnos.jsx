@@ -52,7 +52,6 @@ export default function PaginaTecnologias() {
 
   return (
     <>
-      <Navbar />
       <div className="panelTecno">
         <div className="tituloTecno">
           <h1>TECNOLOGÍAS</h1>
