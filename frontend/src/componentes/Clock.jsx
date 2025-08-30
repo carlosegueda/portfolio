@@ -21,7 +21,7 @@ export default function Clock() {
   });
 
   return (
-    <div>
+    <div className="fecha">
       <h4>{`${dateString} -  ${timeString}`}</h4>
     </div>
   );
