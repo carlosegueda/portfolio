@@ -16,7 +16,7 @@ export default function PaginaInicio() {
     <>
       <div className="mainPanel">
         {" "}
-        <div className="tituloInicio"><h1>CARLOS&nbsp;&nbsp;OSEGUEDA</h1></div>
+        <h1>CARLOS&nbsp;&nbsp;OSEGUEDA</h1>
         <div class="imagen-flotante1">
           <img src="shine.png" />
         </div>
@@ -61,15 +61,12 @@ export default function PaginaInicio() {
           </div>
           <div className="cv">
             {" "}
-            <div className="cvin">
-            </div>{" "}
+            <div className="cvin"></div>{" "}
             <div className="cv2" onClick={handleDownload}>
               <h3>DESCARGAR CV</h3>
             </div>
           </div>
         </div>
-        
-
       </div>
     </>
   );
