@@ -35,11 +35,7 @@ body {
   align-items: center;
 }
 
-html{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .navbar {
   background: var(--colorsec);
