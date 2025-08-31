@@ -6,6 +6,14 @@ export default function PaginaProyectos() {
   return (
     <>
       <div className="panelProy">
+        <div className="esquinaP">
+          {" "}
+          <img src="corner-izq.png" />
+        </div>
+        <div className="midP">
+          {" "}
+          <img src="mid.png" />
+        </div>
         <div className="base"></div>
         <div className="tituloProy">
           <h1>PROYECTOS</h1>
@@ -14,22 +22,36 @@ export default function PaginaProyectos() {
           <div className="proyecto1">
             <h1>GESTOR DE INVENTARIO</h1>
             <div className="infoProy">
-              <img src="inventory.png" onClick={() => window.open("https://github.com/carlosegueda/inventory_manager", "_blank")}/>{" "}
+              <img
+                src="inventory.png"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/carlosegueda/inventory_manager",
+                    "_blank"
+                  )
+                }
+              />{" "}
               <p>
                 • APLICACIÓN WEB COMPLETA DESARROLLADA CON HTML, CSS,
-                JAVASCRIPT, NODE.JS, EXPRESS Y SQL QUE PERMITE
-                GESTIONAR EL INVENTARIO DE MANERA EFICIENTE.
+                JAVASCRIPT, NODE.JS, EXPRESS Y SQL QUE PERMITE GESTIONAR EL
+                INVENTARIO DE MANERA EFICIENTE.
                 <span class="espacio"></span>• PERMITE REGISTRAR, EDITAR Y
-                VISUALIZAR PRODUCTOS EN STOCK, GENERAR FACTURAS AL
-                REALIZAR VENTAS Y ACTUALIZAR AUTOMÁTICAMENTE LAS CANTIDADES
-                DISPONIBLES.
+                VISUALIZAR PRODUCTOS EN STOCK, GENERAR FACTURAS AL REALIZAR
+                VENTAS Y ACTUALIZAR AUTOMÁTICAMENTE LAS CANTIDADES DISPONIBLES.
                 <span class="espacio"></span>• INCLUYE UN FLUJO COMPLETO DE
                 VENTA E INVENTARIO PARA OPTIMIZAR LA OPERACIÓN DIARIA DEL
                 NEGOCIO.
               </p>
             </div>
             <div className="links">
-              <button onClick={() => window.open("https://github.com/carlosegueda/inventory_manager", "_blank")}>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/carlosegueda/inventory_manager",
+                    "_blank"
+                  )
+                }
+              >
                 <h3>VISITAR</h3>
               </button>
             </div>
@@ -50,7 +72,12 @@ export default function PaginaProyectos() {
               </p>
             </div>
             <div className="links">
-              <button className="visitar" onClick={() => window.open("https://pill-buddy.netlify.app", "_blank")}>
+              <button
+                className="visitar"
+                onClick={() =>
+                  window.open("https://pill-buddy.netlify.app", "_blank")
+                }
+              >
                 <h3>VISITAR</h3>
               </button>
             </div>

@@ -52,6 +52,14 @@ export default function PaginaTecnologias() {
 
   return (
     <>
+      <div className="esquinaT">
+        {" "}
+        <img src="corner-izq.png" />
+      </div>
+      <div className="midT">
+        {" "}
+        <img src="mid.png" />
+      </div>
       <div className="panelTecno">
         <div className="tituloTecno">
           <h1>TECNOLOGÍAS</h1>

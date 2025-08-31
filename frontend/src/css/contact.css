@@ -219,6 +219,35 @@ body {
   transform: scale(1.2);
 }
 
+.esquinaC {
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+  top: 3.8rem;
+  left: 1rem;
+  transform: scaleY(1.4);
+}
+
+.esquinaC img {
+  height: 5rem;
+  width: 8rem;
+
+}
+
+.midC {
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+  top: 12rem;
+  left: 2rem;
+  transform: scaleY(1.4);
+}
+
+.midC img {
+  height: 5rem;
+  width: 7rem;
+}
+
 @media (max-width: 500px) {
   html,
   body {

@@ -63,6 +63,8 @@ export default function PaginaContacto() {
 
   return (
     <>
+    <div className="esquinaC"> <img src="corner-izq.png"/></div>
+    <div className="midC"> <img src="mid.png"/></div>
       <div className="panelContact">
         <div className="tituloContacto">
           {" "}

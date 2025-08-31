@@ -31,6 +31,34 @@ body {
   margin-top: 0.3rem;
 }
 
+.esquinaT {
+  position: absolute;
+  z-index: 9998;
+  pointer-events: none;
+  top: 3.8rem;
+  left: 1rem;
+  transform: scaleY(1.4);
+}
+
+.esquinaT img {
+  height: 5rem;
+  width: 8rem;
+}
+
+.midT {
+  position: absolute;
+  z-index: 9998;
+  pointer-events: none;
+  top: 12rem;
+  left: 2rem;
+  transform: scaleY(1.4);
+}
+
+.midT img {
+  height: 5rem;
+  width: 7rem;
+}
+
 .tituloTecno {
   width: 13%;
   height: 10%;
@@ -425,7 +453,6 @@ body {
     margin-top: 0.5rem;
     transform: scaleY(2.5);
     text-align: start;
-    
   }
 
   .Certificados {

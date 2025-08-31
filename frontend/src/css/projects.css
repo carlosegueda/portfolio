@@ -14,6 +14,36 @@ body {
   --colorter: #d6d6d6;
 }
 
+.esquinaP {
+  position: fixed;
+  z-index: 9998;
+  pointer-events: none;
+  top: 3.8rem;
+  left: 1rem;
+  transform: scaleY(1.4);
+}
+
+.esquinaP img {
+  height: 5rem;
+  width: 8rem;
+  
+
+}
+
+.midP {
+  position: fixed;
+  z-index: 9998;
+  pointer-events: none;
+  top: 14rem;
+  left: 0rem;
+  transform: scaleY(1.4);
+}
+
+.midP img {
+  height: 5rem;
+  width: 7rem;
+}
+
 .panelProy {
   display: flex;
   width: 40rem;

@@ -1,6 +1,8 @@
-.labelNav{
-    color:black;
+.labelNav {
+  color: black;
 }
 
 
-
+.mid {
+    display: none;
+}
