@@ -68,11 +68,11 @@ export default function PaginaInicio() {
               </p>
             </div>
           </div>
-          <div className="cv">
+          <div className="cv" onClick={handleDownload}>
             {" "}
-            <div className="cvin"></div>{" "}
-            <div className="cv2" onClick={handleDownload}>
-              <h3>DESCARGAR CV</h3>
+            <div className="cvin"><h3>DESCARGAR CV</h3></div>{" "}
+            <div className="cv2">
+              <img src="descarga.png"/>
             </div>
           </div>
         </div>

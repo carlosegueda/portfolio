@@ -35,6 +35,12 @@ body {
   align-items: center;
 }
 
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar {
   background: var(--colorsec);
   overflow: hidden;
@@ -208,7 +214,7 @@ hr {
 .part1 .cargo {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 90%;
 }
 
 .cargo .titulo2 {
@@ -272,43 +278,54 @@ hr {
 .cv {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  border: 5px solid var(--colorsec);
-  height: 7.7rem;
-  margin-left: 2.5rem;
+  width: 30%;
+  height: 6rem;
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .cv2 {
   display: flex;
   align-items: center;
+  width: 6.5rem;
   justify-content: center;
   height: 70%;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 4px black solid;
+  border: 5px solid var(--colorsec);
 }
 
-.cv2 h3 {
-  font-size: 0.8rem;
+.cvin h3 {
+  font-size: 0.5rem;
   color: var(--colorter);
   transform: scaleY(2);
   margin: 0;
   line-height: 1;
 }
 
-.cv2:hover {
-  background-color: var(--colorsec);
-  border: 4px black solid;
-}
 
 .cvin {
   display: flex;
+  width: 6.5rem;
+  border: 5px solid var(--colorsec);
   align-items: center;
   justify-content: center;
   background-color: var(--colorsec);
   padding: 0;
   height: 30%;
 }
+
+.cv2 img{
+  height: 2.6rem;
+  filter: invert(0.8);
+  transition: all 0.3s ease;
+}
+
+.cv2 img:hover{
+  transform: scale(1.4);
+}
+
 
 h5 {
   color: var(--colormain);
@@ -330,7 +347,7 @@ h4 {
   z-index: 9997; /* aseguramos que esté al frente */
   pointer-events: none; /* ❌ no bloquea clics ni scroll */
   top: 1.6rem;
-  left: 18.5rem;
+  left: 18.9rem;
   transform: scaleY(1.4);
 }
 
@@ -343,7 +360,7 @@ h4 {
   z-index: 9997; /* aseguramos que esté al frente */
   pointer-events: none; /* ❌ no bloquea clics ni scroll */
   top: 1.6rem;
-  left: 10.8rem;
+  left: 10.4rem;
   transform: scaleY(1.4);
 }
 
@@ -358,12 +375,13 @@ h4 {
   top: 8.6rem;
   left: 28.1rem;
   transform: scaleY(1.4);
+  display: none;
 }
 .imagen-flotante4 {
   position: absolute; /* siempre encima del HTML */
   z-index: 9998; /* aseguramos que esté al frente */
   pointer-events: none; /* ❌ no bloquea clics ni scroll */
-  top: 8.7rem;
+  top: 8.2rem;
   left: 0.1rem;
   transform: scaleY(1.4);
 }
@@ -405,8 +423,8 @@ h4 {
   width: 7rem;
 }
 .imagen-flotante4 img {
-  height: 7rem;
-  width: 9rem;
+  height: 6.6rem;
+  width: 8.6rem;
 }
 .imagen-flotante5 img {
   height: 7rem;
@@ -430,10 +448,12 @@ h4 {
   margin-left: -1rem;
 }
 
+
+
 @media (max-width: 500px) {
   html,
   body {
-    width: 12.5rem;
+    width: 12.2rem;
   }
   .navbar {
     background: var(--colorsec);
@@ -443,7 +463,7 @@ h4 {
     left: 0;
     z-index: 9999;
     gap: 0.3rem;
-    width: 100%; /* se ajusta al ancho real del viewport */
+    width: 100%; 
     max-width: 100%;
     height: 1.4rem;
     display: flex;
@@ -621,7 +641,7 @@ h4 {
   .foto {
     position: absolute;
     top: 7rem;
-    left: 8.5rem
+    left: 8.5rem;
   }
 
   .foto img {
@@ -634,12 +654,12 @@ h4 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 15.7rem;
-    left: 5.5rem;
+    top: 13.7rem;
+    left: 8rem;
     width: 30%;
     border: 5px solid var(--colorsec);
     height: 3rem;
-    margin-left: 2.5rem;
+    margin-left: 0rem;
   }
 
   .cv2 {
@@ -647,13 +667,14 @@ h4 {
     align-items: center;
     justify-content: center;
     height: 60%;
+    width: 100%;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 4px black solid;
+    border: none;
   }
 
-  .cv2 h3 {
-    font-size: 0.2rem;
+  .cvin h3 {
+    font-size: 0.3rem;
     color: var(--colorter);
     transform: scaleY(2);
     margin: 0;
@@ -671,8 +692,15 @@ h4 {
     justify-content: center;
     background-color: var(--colorsec);
     padding: 0;
+    width: 95%;
     height: 40%;
   }
+
+  .cv2 img{
+  height: 1rem;
+  filter: invert(0.8);
+  transition: all 0.3s ease;
+}
 
   h5 {
     color: var(--colormain);
@@ -746,7 +774,7 @@ h4 {
     position: absolute; /* siempre encima del HTML */
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
-    top: 4.5rem;
+    top: 3.5rem;
     left: 7.4rem;
     transform: scaleY(1.4);
   }
