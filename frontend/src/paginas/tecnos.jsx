@@ -80,30 +80,32 @@ export default function PaginaTecnologias() {
           ))}
         </div>
       </div>
-      <div className="part2">
-        <div className="Certificados">
-          <h1>CERTIFICACIONES</h1>
-          <div className="certf">
-            <div onClick={() => window.open("infopSQLPDF.pdf", "_blank")}>
-              {" "}
-              <img src="infopSQL.jpg" />
-              <h3>BASE DE DATOS MYSQL</h3> <h3>INFOP</h3>
-              <h3>07/24</h3>
-            </div>
-            <div onClick={() => window.open("infopPyPDF.pdf", "_blank")}>
-              {" "}
-              <img src="infopPY.jpg" /> <h3>PROGRAMACIÓN EN PYTHON</h3>{" "}
-              <h3>INFOP</h3> <h3>07/24</h3>
-            </div>
-            <div onClick={() => window.open("infopWebPDF.pdf", "_blank")}>
-              {" "}
-              <img src="infopPY.jpg" /> <h3>DISEÑO WEB</h3> <h3>INFOP</h3>{" "}
-              <h3>06/25</h3>
-            </div>
-            <div onClick={() => window.open("infopExcelPDF.pdf", "_blank")}>
-              {" "}
-              <img src="infopPY.jpg" />
-              <h3>EXCEL AVANZADO</h3> <h3>INFOP</h3> <h3>06/25</h3>
+      <div className="certPanel">
+        <div className="part2">
+          <div className="Certificados">
+            <h1>CERTIFICACIONES</h1>
+            <div className="certf">
+              <div onClick={() => window.open("infopSQLPDF.pdf", "_blank")}>
+                {" "}
+                <img src="infopSQL.jpg" />
+                <h3>BASE DE DATOS MYSQL</h3> <h3>INFOP</h3>
+                <h3>07/24</h3>
+              </div>
+              <div onClick={() => window.open("infopPyPDF.pdf", "_blank")}>
+                {" "}
+                <img src="infopPY.jpg" /> <h3>PROGRAMACIÓN EN PYTHON</h3>{" "}
+                <h3>INFOP</h3> <h3>07/24</h3>
+              </div>
+              <div onClick={() => window.open("infopWebPDF.pdf", "_blank")}>
+                {" "}
+                <img src="infopPY.jpg" /> <h3>DISEÑO WEB</h3> <h3>INFOP</h3>{" "}
+                <h3>06/25</h3>
+              </div>
+              <div onClick={() => window.open("infopExcelPDF.pdf", "_blank")}>
+                {" "}
+                <img src="infopPY.jpg" />
+                <h3>EXCEL AVANZADO</h3> <h3>INFOP</h3> <h3>06/25</h3>
+              </div>
             </div>
           </div>
         </div>
