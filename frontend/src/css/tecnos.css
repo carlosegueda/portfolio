@@ -33,7 +33,7 @@ body {
 
 .esquinaT {
   position: absolute;
-  z-index: 9998;
+  z-index: 9997;
   pointer-events: none;
   top: 3.8rem;
   left: 1rem;
@@ -47,7 +47,7 @@ body {
 
 .midT {
   position: absolute;
-  z-index: 9998;
+  z-index: 9997;
   pointer-events: none;
   top: 12rem;
   left: 2rem;
@@ -305,6 +305,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0.1rem;
     column-gap: 0.1rem;
+    z-index: 9998;
     padding: 0rem;
     position: static;
     margin: 0;
@@ -507,5 +508,34 @@ body {
   .certf div img {
     height: 3rem;
     margin-bottom: 0.2rem;
+  }
+
+  .esquinaT {
+    position: absolute;
+    z-index: 9997;
+    pointer-events: none;
+    top: 2.2rem;
+    left: 3rem;
+    transform: scaleY(1.4);
+  }
+
+  .esquinaT img {
+   height: 3rem;
+    width: 4rem;
+  }
+
+  .midT {
+    position: fixed;
+    z-index: 9997;
+    pointer-events: none;
+    top: 12rem;
+    left: 2rem;
+    transform: scaleY(1.4);
+    display: none;
+  }
+
+  .midT img {
+    height: 5rem;
+    width: 7rem;
   }
 }

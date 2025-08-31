@@ -26,8 +26,6 @@ body {
 .esquinaP img {
   height: 5rem;
   width: 8rem;
-  
-
 }
 
 .midP {
@@ -263,6 +261,7 @@ body {
     align-items: center;
     margin-top: 0.2rem;
     margin-left: 0.2rem;
+     z-index: 9998;
     gap: 0.4rem;
   }
 
@@ -340,7 +339,7 @@ body {
     color: var(--colormain);
     font-size: 0.3rem;
     transform: scaleY(2.5);
-    margin:0;
+    margin: 0;
   }
 
   .proyecto1 h1,
@@ -351,9 +350,6 @@ body {
     margin: 0;
     transform: scaleY(2.5);
   }
-
-
-
 
   .panelWp {
     border: 5px solid var(--colorsec);
@@ -403,5 +399,34 @@ body {
   .qr img {
     border: 5px solid var(--colorsec);
     height: 7rem;
+  }
+
+  .esquinaP {
+    position: absolute;
+    z-index: 9997;
+    pointer-events: none;
+    top: 2.2rem;
+    left: 3rem;
+    transform: scaleY(1.4);
+  }
+
+  .esquinaP img {
+    height: 3rem;
+    width: 4rem;
+  }
+
+  .midP {
+    position: fixed;
+    z-index: 9997;
+    pointer-events: none;
+    top: 12rem;
+    left: 2rem;
+    transform: scaleY(1.4);
+    display: none;
+  }
+
+  .midP img {
+    height: 5rem;
+    width: 7rem;
   }
 }
