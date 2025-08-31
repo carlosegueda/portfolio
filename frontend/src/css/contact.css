@@ -46,6 +46,7 @@ body {
   height: 13.5rem;
   width: 40%;
   padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--colormain);
 }
 
 .tituloMsj h3 {
@@ -176,6 +177,7 @@ body {
   width: 40%;
   padding: 1rem;
   z-index: 9999;
+  background-color: var(--colormain);
 }
 
 .redes {
@@ -249,6 +251,21 @@ body {
   width: 7rem;
 }
 
+.midR1 {
+  position: fixed;
+  z-index: 9996;
+  pointer-events: none;
+  top: 9.3rem;
+  left: 32.65rem;
+  transform: scaleY(1.4);
+}
+
+.midR1 img {
+  height: 9rem;
+  width: 10rem;
+}
+
+
 @media (max-width: 500px) {
   html,
   body {
@@ -294,6 +311,7 @@ body {
     height: 10.6rem;
     width: 80%;
     padding: 0.5rem;
+    background-color: var(--colormain);
   }
 
   .tituloMsj h3 {
@@ -308,6 +326,7 @@ body {
     justify-content: start;
     align-items: start;
     height: 1.4rem;
+    
   }
 
   .inputGroup label {

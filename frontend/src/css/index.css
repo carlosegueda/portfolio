@@ -171,7 +171,7 @@ html {
 .mainPanel {
   user-select: none;
   cursor: default;
-  position: relative; /* 📌 punto de referencia */
+  position: relative;
   display: inline-block;
   flex-direction: column;
   justify-content: center;
@@ -181,8 +181,6 @@ html {
   gap: none;
   height: auto;
   margin-top: 2.6rem;
-
-  /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
 }
 
 .mainPanel h1 {
@@ -196,12 +194,12 @@ html {
 }
 
 hr {
-  border: none; /* quita borde por defecto */
+  border: none;
   height: 0.15rem;
-  width: 100%; /* grosor de la línea */
-  background-color: var(--colorsec); /* color de la línea */
+  width: 100%;
+  background-color: var(--colorsec);
   margin: 0.4rem;
-  margin-bottom: 1rem; /* espacio arriba y abajo */
+  margin-bottom: 1rem;
 }
 
 .part1 {
@@ -278,51 +276,46 @@ hr {
 .cv {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
   height: 6rem;
   margin: 0;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  z-index: 3;
 }
 
-.cv2 {
-  display: flex;
-  align-items: center;
-  width: 6.5rem;
-  justify-content: center;
-  height: 70%;
+.cv img {
+  width: 9.7rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 5px solid var(--colorsec);
 }
 
-.cvin h3 {
-  font-size: 0.5rem;
+.cv:hover .cvstar{
+  transform: scaleY(0.8);
+  
+}
+.cv:hover h3{
+  transform: scaleY(2.3) scale(1.1);
+}
+
+.cv h3 {
+  position: absolute;
+  font-size: 0.8rem;
   color: var(--colorter);
-  transform: scaleY(2);
-  margin: 0;
-  line-height: 1;
-}
-
-.cvin {
-  display: flex;
-  width: 6.5rem;
-  border: 5px solid var(--colorsec);
-  align-items: center;
-  justify-content: center;
-  background-color: var(--colorsec);
-  padding: 0;
-  height: 30%;
-}
-
-.cv2 img {
-  height: 2.6rem;
-  filter: invert(0.8);
+  transform: scaleY(2.3);
+  width: 2rem;
+  bottom: 3rem;
+  cursor: pointer;
+  z-index: 2;
+  right: 8rem;
+  line-height: 0.7rem;
+  text-align: end;
+  -webkit-text-stroke: 3px black; /* borde exterior */
+  paint-order: stroke fill;
   transition: all 0.3s ease;
-}
-
-.cv2 img:hover {
-  transform: scale(1.4);
 }
 
 h5 {
@@ -386,22 +379,22 @@ h4 {
 .imagen-flotante5 {
   position: absolute; /* siempre encima del HTML */
   z-index: 9998; /* aseguramos que esté al frente */
-  pointer-events: none; 
+  pointer-events: none;
   top: 1.8rem;
   left: 34rem;
   transform: scaleY(1.4);
 }
 .imagen-flotante6 {
-  position: absolute; 
-  z-index: 9998; 
-  pointer-events: none; 
+  position: absolute;
+  z-index: 9998;
+  pointer-events: none;
   top: 1.8rem;
   left: 0.5rem;
   transform: scaleY(1.4);
 }
 .imagen-flotante7 {
   position: absolute;
-  z-index: 9998; 
+  z-index: 9998;
   pointer-events: none;
   top: 4.6rem;
   left: 26.5rem;
@@ -410,7 +403,7 @@ h4 {
 .imagen-flotante8 {
   position: absolute;
   z-index: 9998;
-  pointer-events: none; 
+  pointer-events: none;
   top: 1.8rem;
   left: 12.8rem;
   transform: scaleY(1.4);
@@ -652,57 +645,54 @@ h4 {
     z-index: 9998;
   }
 
-  .cv {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 13.7rem;
-    left: 8rem;
-    width: 30%;
-    border: 5px solid var(--colorsec);
-    height: 3rem;
-    margin-left: 0rem;
-  }
+  
+.cv {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  right: 0.2rem;
+  top: 13.1rem;
+  height: 6rem;
+  margin: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  z-index: 3;
+}
 
-  .cv2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-  }
+.cv img {
+  
+  width: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  .cvin h3 {
-    font-size: 0.3rem;
-    color: var(--colorter);
-    transform: scaleY(2);
-    margin: 0;
-    line-height: 1;
-  }
+.cv:hover .cvstar{
+  transform: scaleY(0.8);
+  
+}
+.cv:hover h3{
+  transform: scaleY(2.3) scale(1.1);
+}
 
-  .cv2:hover {
-    background-color: var(--colorsec);
-    border: 4px black solid;
-  }
-
-  .cvin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--colorsec);
-    padding: 0;
-    width: 95%;
-    height: 40%;
-  }
-
-  .cv2 img {
-    height: 1rem;
-    filter: invert(0.8);
-    transition: all 0.3s ease;
-  }
+.cv h3 {
+  position: absolute;
+  font-size: 0.3rem;
+  color: var(--colorter);
+  transform: scaleY(2.3);
+  width: 2rem;
+  bottom: 2.1rem;
+  cursor: pointer;
+  z-index: 2;
+  right: 1.5rem;
+  line-height: 0.25rem;
+  text-align: end;
+  -webkit-text-stroke: 1px black; /* borde exterior */
+  paint-order: stroke fill;
+  transition: all 0.3s ease;
+}
 
   h5 {
     color: var(--colormain);
