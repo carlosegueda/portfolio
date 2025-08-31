@@ -69,6 +69,7 @@ body {
 
 .inputGroup input {
   height: 0.6rem;
+  border-radius: 0;
   width: 11rem;
   font-family: "Krona One", sans-serif;
   font-size: 0.5rem;
@@ -107,6 +108,7 @@ body {
 
 .inputGroupMsj textarea {
   height: 2rem;
+  border-radius: 0;
   font-family: "Krona One", sans-serif;
   font-size: 0.5rem;
   transform: scaleY(2);
