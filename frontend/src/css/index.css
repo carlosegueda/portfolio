@@ -37,12 +37,12 @@ html {
 .navbar {
   background: var(--colorsec);
   overflow: hidden;
-  position: fixed; /* fija arriba */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   gap: 2.5rem;
-  width: 100%; /* se ajusta al ancho real del viewport */
+  width: 100%;
   max-width: 100%;
   height: 2.8rem;
   display: flex;
@@ -53,8 +53,8 @@ html {
 }
 
 .navbar h3 {
-  display: inline-block; /* o flex si quieres bloque */
-  justify-content: center; /* centra horizontal */
+  display: inline-block;
+  justify-content: center;
   align-items: center;
   color: var(--colormain);
   text-decoration: none;
@@ -75,7 +75,6 @@ html {
   color: var(--colorsec);
 }
 
-/*forma main */
 .toggle-checkbox {
   position: absolute;
   opacity: 0;
@@ -262,7 +261,6 @@ hr {
 
 .foto img {
   margin-top: auto;
-  /* siempre encima del HTML */
   z-index: 9998;
 }
 
@@ -305,7 +303,7 @@ hr {
   right: 2.5rem;
   line-height: 0.7rem;
   text-align: center;
-  -webkit-text-stroke: 3px black; /* borde exterior */
+  -webkit-text-stroke: 3px black;
   paint-order: stroke fill;
   transition: all 0.3s ease;
 }
@@ -326,9 +324,9 @@ h4 {
 }
 
 .imagen-flotante1 {
-  position: absolute; /* siempre encima del HTML */
-  z-index: 9997; /* aseguramos que esté al frente */
-  pointer-events: none; /* ❌ no bloquea clics ni scroll */
+  position: absolute;
+  z-index: 9997; 
+  pointer-events: none; 
   top: 1.6rem;
   left: 18.9rem;
   transform: scaleY(1.4);
@@ -339,9 +337,9 @@ h4 {
 }
 
 .imagen-flotante2 {
-  position: absolute; /* siempre encima del HTML */
-  z-index: 9997; /* aseguramos que esté al frente */
-  pointer-events: none; /* ❌ no bloquea clics ni scroll */
+  position: absolute; 
+  z-index: 9997;
+  pointer-events: none; 
   top: 1.6rem;
   left: 10.4rem;
   transform: scaleY(1.4);
@@ -352,25 +350,25 @@ h4 {
 }
 
 .imagen-flotante3 {
-  position: absolute; /* siempre encima del HTML */
-  z-index: 9998; /* aseguramos que esté al frente */
-  pointer-events: none; /* ❌ no bloquea clics ni scroll */
+  position: absolute;
+  z-index: 9998; 
+  pointer-events: none;
   top: 8.6rem;
   left: 28.1rem;
   transform: scaleY(1.4);
   display: none;
 }
 .imagen-flotante4 {
-  position: absolute; /* siempre encima del HTML */
-  z-index: 9998; /* aseguramos que esté al frente */
-  pointer-events: none; /* ❌ no bloquea clics ni scroll */
+  position: absolute;
+  z-index: 9998; 
+  pointer-events: none;
   top: 8.2rem;
   left: 0.1rem;
   transform: scaleY(1.4);
 }
 .imagen-flotante5 {
-  position: absolute; /* siempre encima del HTML */
-  z-index: 9998; /* aseguramos que esté al frente */
+  position: absolute; 
+  z-index: 9998; 
   pointer-events: none;
   top: 1.8rem;
   left: 34rem;
@@ -678,7 +676,7 @@ h4 {
     right: -0.17rem;
     line-height: 0.25rem;
     text-align: center;
-    -webkit-text-stroke: 1px black; /* borde exterior */
+    -webkit-text-stroke: 1px black;
     paint-order: stroke fill;
     transition: all 0.3s ease;
   }
@@ -690,9 +688,9 @@ h4 {
   }
 
   .imagen-flotante1 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9997; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute; 
+    z-index: 9997;
+    pointer-events: none; 
     top: 0.4rem;
     left: 5.17rem;
     transform: scaleY(1.4);
@@ -704,9 +702,9 @@ h4 {
   }
 
   .imagen-flotante2 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9997; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute;
+    z-index: 9997; 
+    pointer-events: none; 
     top: 4.2rem;
     left: -0.35rem;
     transform: scaleY(1.4);
@@ -718,51 +716,51 @@ h4 {
   }
 
   .imagen-flotante3 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute;
+    z-index: 9998;
+    pointer-events: none; 
     top: 1rem;
     left: 1rem;
     transform: scaleY(1.4);
     display: none;
   }
   .imagen-flotante4 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute; 
+    z-index: 9998; 
+    pointer-events: none;
     top: 11rem;
     left: 7rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante5 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute;
+    z-index: 9998;
+    pointer-events: none; 
     top: 1rem;
     left: 1rem;
     transform: scaleY(1.4);
     display: none;
   }
   .imagen-flotante6 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute;
+    z-index: 9998; 
+    pointer-events: none; 
     top: 0rem;
     left: 0rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante7 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute;
+    z-index: 9998;
+    pointer-events: none; 
     top: 3.5rem;
     left: 7.4rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante8 {
-    position: absolute; /* siempre encima del HTML */
-    z-index: 9998; /* aseguramos que esté al frente */
-    pointer-events: none; /* ❌ no bloquea clics ni scroll */
+    position: absolute; 
+    z-index: 9998;
+    pointer-events: none; 
     top: 1rem;
     left: 1rem;
     transform: scaleY(1.4);

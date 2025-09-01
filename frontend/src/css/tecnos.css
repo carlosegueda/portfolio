@@ -66,12 +66,12 @@ body {
 .tecno-container {
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  gap: 1rem; /* espacio entre filas y columnas */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   padding: 1rem;
   padding-bottom: 0;
   position: relative;
-  margin-top: 2rem; /* para los divs absolutos cuando se expandan */
+  margin-top: 2rem;
 }
 
 .tecno {
@@ -167,7 +167,7 @@ body {
   font-size: 0.8rem;
   line-height: 0.8rem;
   margin-left: 1.5rem;
-  grid-area: 2 / 2 / 4 / 4; /* se muestra solo cuando el div tiene la clase active */
+  grid-area: 2 / 2 / 4 / 4; 
 }
 
 .stars {
@@ -395,7 +395,7 @@ body {
     font-size: 0.8rem;
     line-height: 0.8rem;
     margin-left: 1.5rem;
-    grid-area: 2 / 2 / 4 / 4; /* se muestra solo cuando el div tiene la clase active */
+    grid-area: 2 / 2 / 4 / 4; 
   }
 
   .stars {

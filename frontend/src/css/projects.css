@@ -113,7 +113,7 @@ body {
 
 .espacio {
   display: block;
-  height: 2px; /* espacio deseado */
+  height: 2px;
 }
 
 .links {
@@ -302,7 +302,7 @@ body {
 
   .espacio {
     display: block;
-    height: 2px; /* espacio deseado */
+    height: 2px; 
   }
 
   .links {
