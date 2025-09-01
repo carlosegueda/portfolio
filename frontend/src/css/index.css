@@ -515,7 +515,7 @@ h4 {
     height: auto;
     padding: 0;
 
-    margin-top: 1.4rem;
+    margin-top: 1.6rem;
     /*background: linear-gradient(to top, var(--colormain), var(--colorsec));*/
   }
 
@@ -585,7 +585,7 @@ h4 {
     color: var(--colorter);
     margin: 0;
     font-weight: 900;
-    transform: scaleY(2.5);
+    transform: scaleY(2.8);
     height: auto;
     letter-spacing: -0.03rem;
   }
