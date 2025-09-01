@@ -272,7 +272,7 @@ body {
     width: 9.4rem;
     height: 7.9rem;
     margin-bottom: 0.5rem;
-    border: 6px solid var(--colorsec);
+    border: 4px solid var(--colorsec);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -290,7 +290,7 @@ body {
   .infoProy img {
     height: 2.2rem;
     width: 4rem;
-    border: solid 4px var(--colorsec);
+    border: solid 2.5px var(--colorsec);
   }
 
   .infoProy p {
@@ -360,7 +360,9 @@ body {
     flex-direction: column;
     height: 15rem;
     margin-bottom: 0.4rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
+    padding: 0.4rem 0 0.4rem 0;
+    gap: 0.3rem;
   }
 
   .whatsapp {
