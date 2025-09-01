@@ -82,7 +82,7 @@ export default function PaginaProyectos() {
               </button>
             </div>
           </div>
-          <div className="proyecto3">
+          {/* <div className="proyecto3">
             <h1>PROYECTO 3 - NO SE AUN</h1>
             <div className="infoProy">
               <img src="reactR.png" />{" "}
@@ -102,7 +102,7 @@ export default function PaginaProyectos() {
                 <h3>VISITAR</h3>
               </button>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </>

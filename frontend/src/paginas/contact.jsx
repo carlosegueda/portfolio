@@ -75,9 +75,6 @@ export default function PaginaContacto() {
           <div className="tituloMsj">
             <h3>ENVÍAME UN MENSAJE</h3>
           </div>
-          {submitted && (
-            <div>¡Mensaje enviado con éxito! Te contactaremos pronto.</div>
-          )}
 
           <form onSubmit={handleSubmit}>
             <div className="inputGroup">
@@ -129,7 +126,7 @@ export default function PaginaContacto() {
           </form>
         </div>
         <div className="contactMe">
-          <h2>carlosegueda2002@gmai.com</h2>
+          <h2>carlosegueda2002@gmail.com</h2>
           <div className="redes">
             {divs.map((num) => (
               <button

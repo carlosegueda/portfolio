@@ -1,11 +1,4 @@
-body.dark-mode {
-  --colormain: #ff0040;
-  --colorsec: #000000;
-  --colorsec2: #35051e;
-  --colormain2: #b31164;
-  --colorter: #d6d6d6;
-}
-
+/*COLORES A USAR, SOLO MODIFCIAR AQUI */
 body {
   --colormain: #000000;
   --colorsec: #ff0040;
@@ -16,7 +9,7 @@ body {
 
 .esquinaP {
   position: fixed;
-  z-index: 9998;
+  z-index: 9994;
   pointer-events: none;
   top: 3.8rem;
   left: 1rem;
@@ -46,6 +39,7 @@ body {
   display: flex;
   width: 40rem;
   margin-top: 2.8rem;
+  z-index: 9999;
 }
 
 .tituloProy {
@@ -76,6 +70,7 @@ body {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   gap: 1rem;
+  z-index: 9997;
 }
 
 .proyectos .proyecto1,

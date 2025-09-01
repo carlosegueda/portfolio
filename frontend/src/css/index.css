@@ -12,13 +12,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.dark-mode {
-  --colormain: #ff0040;
-  --colorsec: #000000;
-  --colorsec2: #35051e;
-  --colormain2: #b31164;
-  --colorter: #d6d6d6;
-}
 
 body {
   --colormain: #000000;
