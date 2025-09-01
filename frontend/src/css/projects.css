@@ -265,7 +265,7 @@ body {
   .proyectos .proyecto3 {
     padding: 0.3rem;
     width: 9.4rem;
-    height: 7.9rem;
+    height: 9rem;
     margin-bottom: 0.5rem;
     border: 4px solid var(--colorsec);
     display: flex;
@@ -290,14 +290,14 @@ body {
 
   .infoProy p {
     text-align: start;
-    font-size: 0.15rem;
+    font-size: 0.19rem;
     letter-spacing: -0.01rem;
     line-height: 0.2rem;
     transform: scaleY(1.8);
     color: var(--colorter);
     margin: 0;
     width: 100%;
-    height: 1.5rem;
+    height: 2.3rem;
   }
 
   .espacio {
