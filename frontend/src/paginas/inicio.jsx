@@ -53,7 +53,7 @@ export default function PaginaInicio() {
                 <h2>INGENIERO EN SISTEMAS</h2>
               </div>
               <div className="Tcargo">
-                <h3>DISEÑADOR UX/UI</h3>
+                <h3>DESARROLLADOR FULL-STACK</h3>
               </div>
             </div>
 

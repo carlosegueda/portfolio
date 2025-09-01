@@ -106,12 +106,12 @@ export default function PaginaTecnologias() {
               </div>
               <div onClick={() => window.open("infopWebPDF.pdf", "_blank")}>
                 {" "}
-                <img src="infopPY.jpg" /> <h3>DISEÑO WEB</h3> <h3>INFOP</h3>{" "}
+                <img src="infopWeb.jpg" /> <h3>DISEÑO WEB</h3> <h3>INFOP</h3>{" "}
                 <h3>06/25</h3>
               </div>
               <div onClick={() => window.open("infopExcelPDF.pdf", "_blank")}>
                 {" "}
-                <img src="infopPY.jpg" />
+                <img src="infopExcel.jpg" />
                 <h3>EXCEL AVANZADO</h3> <h3>INFOP</h3> <h3>06/25</h3>
               </div>
             </div>
