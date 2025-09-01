@@ -265,7 +265,6 @@ body {
   width: 10rem;
 }
 
-
 @media (max-width: 500px) {
   html,
   body {
@@ -326,7 +325,6 @@ body {
     justify-content: start;
     align-items: start;
     height: 1.4rem;
-    
   }
 
   .inputGroup label {
@@ -516,5 +514,19 @@ body {
   .midC img {
     height: 5rem;
     width: 7rem;
+  }
+
+  .midR1 {
+    position: fixed;
+    z-index: 9996;
+    pointer-events: none;
+    top: 14.5rem;
+    left: 3.4rem;
+    transform: scaleY(1.4);
+  }
+
+  .midR1 img {
+    height: 6rem;
+    width: 9rem;
   }
 }

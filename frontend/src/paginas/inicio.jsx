@@ -66,7 +66,7 @@ export default function PaginaInicio() {
             </div>
           </div>
           <div className="cv" onClick={handleDownload}>
-            <img src="cvstar.png" className="cvstar" onClick={handleDownload}/>
+            <img src="cvimg.png" className="cvstar" onClick={handleDownload}/>
             <h3 onClick={handleDownload}>DESCARGAR CV</h3>
           </div>
         </div>

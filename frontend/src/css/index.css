@@ -281,23 +281,22 @@ hr {
   width: 20%;
   height: 6rem;
   margin: 0;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 1.6rem;
+  margin-left: 0.1rem;
+  margin-right: 1.3rem;
   z-index: 3;
 }
 
 .cv img {
-  width: 9.7rem;
+  width: 11.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.cv:hover .cvstar{
-  transform: scaleY(0.8);
-  
+.cv:hover .cvstar {
+  transform: scaleX(0.8);
 }
-.cv:hover h3{
+.cv:hover h3 {
   transform: scaleY(2.3) scale(1.1);
 }
 
@@ -306,13 +305,13 @@ hr {
   font-size: 0.8rem;
   color: var(--colorter);
   transform: scaleY(2.3);
-  width: 2rem;
+  width: 8rem;
   bottom: 3rem;
   cursor: pointer;
   z-index: 2;
-  right: 8rem;
+  right: 2.5rem;
   line-height: 0.7rem;
-  text-align: end;
+  text-align: center;
   -webkit-text-stroke: 3px black; /* borde exterior */
   paint-order: stroke fill;
   transition: all 0.3s ease;
@@ -453,7 +452,7 @@ h4 {
   .navbar {
     background: var(--colorsec);
     overflow: hidden;
-    position: fixed; /* fija arriba */
+    position: fixed; 
     top: 0;
     left: 0;
     z-index: 9999;
@@ -469,8 +468,8 @@ h4 {
   }
 
   .navbar h3 {
-    display: inline-block; /* o flex si quieres bloque */
-    justify-content: center; /* centra horizontal */
+    display: inline-block;
+    justify-content: center; 
     align-items: center;
     color: var(--colormain);
     text-decoration: none;
@@ -487,9 +486,9 @@ h4 {
   }
 
   a {
-    display: flex; /* o inline */
-    height: auto; /* quita cualquier altura fija */
-    line-height: normal; /* opcional, para no estirar el bloque */
+    display: flex;
+    height: auto; 
+    line-height: normal;
     padding: 0;
     text-decoration: none;
   }
@@ -515,7 +514,7 @@ h4 {
   .mainPanel {
     user-select: none;
     cursor: default;
-    position: relative; /* 📌 punto de referencia */
+    position: relative;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -645,54 +644,51 @@ h4 {
     z-index: 9998;
   }
 
-  
-.cv {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  right: 0.2rem;
-  top: 13.1rem;
-  height: 6rem;
-  margin: 0;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  z-index: 3;
-}
+  .cv {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    right: 0.1rem;
+    top: 13.45rem;
+    height: 6rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 3;
+  }
 
-.cv img {
-  
-  width: 4rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+  .cv img {
+    width: 4.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
-.cv:hover .cvstar{
-  transform: scaleY(0.8);
-  
-}
-.cv:hover h3{
-  transform: scaleY(2.3) scale(1.1);
-}
+  .cv:hover .cvstar {
+    transform: scaleY(0.8);
+  }
+  .cv:hover h3 {
+    transform: scaleY(2.3) scale(1.1);
+  }
 
-.cv h3 {
-  position: absolute;
-  font-size: 0.3rem;
-  color: var(--colorter);
-  transform: scaleY(2.3);
-  width: 2rem;
-  bottom: 2.1rem;
-  cursor: pointer;
-  z-index: 2;
-  right: 1.5rem;
-  line-height: 0.25rem;
-  text-align: end;
-  -webkit-text-stroke: 1px black; /* borde exterior */
-  paint-order: stroke fill;
-  transition: all 0.3s ease;
-}
+  .cv h3 {
+    position: absolute;
+    font-size: 0.3rem;
+    color: var(--colorter);
+    transform: scaleY(2.3);
+    width: 3rem;
+    bottom: 2.45rem;
+    cursor: pointer;
+    z-index: 2;
+    right: -0.17rem;
+    line-height: 0.25rem;
+    text-align: center;
+    -webkit-text-stroke: 1px black; /* borde exterior */
+    paint-order: stroke fill;
+    transition: all 0.3s ease;
+  }
 
   h5 {
     color: var(--colormain);
@@ -705,7 +701,7 @@ h4 {
     z-index: 9997; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
     top: 0.4rem;
-    left: 5.3rem;
+    left: 5.17rem;
     transform: scaleY(1.4);
   }
 
