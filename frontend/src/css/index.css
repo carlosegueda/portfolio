@@ -650,7 +650,7 @@ h4 {
     align-items: center;
     justify-content: center;
     width: 20%;
-    right: 0.1rem;
+    right: 0.5rem;
     top: 13.45rem;
     height: 6rem;
     margin: 0;
@@ -738,7 +738,7 @@ h4 {
     z-index: 9998; /* aseguramos que esté al frente */
     pointer-events: none; /* ❌ no bloquea clics ni scroll */
     top: 11rem;
-    left: 7.2rem;
+    left: 7rem;
     transform: scaleY(1.4);
   }
   .imagen-flotante5 {
